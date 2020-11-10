@@ -7273,6 +7273,9 @@ h3 {
       font-size: 1.5em; } }
 
 .masthead {
+  background-image: url(../assets/img/bg/marble-paths.png);
+  background-size: cover;
+  background-position: center;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem; }
   .masthead .masthead-heading {
@@ -7281,7 +7284,12 @@ h3 {
   .masthead .masthead-subheading {
     font-size: 1.25rem; }
   .masthead .masthead-avatar {
-    width: 15rem; }
+    width: 15rem;
+    height: 15rem; 
+    padding: 5px;  
+    border: 0.5em solid white; 
+    object-fit: cover; 
+    border-radius: 50%;}
 
 @media (min-width: 992px) {
   .masthead {
