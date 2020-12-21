@@ -4237,6 +4237,10 @@ a.close.disabled {
   margin-bottom: 0;
   line-height: 1.5; }
 
+.modal-subtitle {
+  margin-bottom: 0;
+  line-height: 1.5; }
+
 .modal-body {
   position: relative;
   flex: 1 1 auto;
@@ -7284,8 +7288,8 @@ h3 {
   .masthead .masthead-subheading {
     font-size: 1.25rem; }
   .masthead .masthead-avatar {
-    width: 15rem;
-    height: 15rem; 
+    width: 20rem;
+    height: 20rem; 
     padding: 5px;  
     border: 0.5em solid white; 
     object-fit: cover; 
@@ -7305,7 +7309,7 @@ h3 {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+  max-width: 50rem;
   border-radius: 0.5rem;
   overflow: hidden; }
   .portfolio .portfolio-item .portfolio-item-caption {
