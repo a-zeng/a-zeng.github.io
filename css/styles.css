@@ -7426,3 +7426,35 @@ form .row:first-child .floating-label-form-group {
 
 .btn-social {
   margin-bottom: 0.5rem; }
+
+.box {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.coding {
+    background: #109618;
+}
+
+.engineering-programs {
+    background: #3366CC;
+}
+
+.engineering-skills {
+    background: #0099C6;
+}
+
+.general {
+    background: #FF9900;
+}
+
+.certification {
+    background: #990099;
+}
+
+.project {
+    background: #DC3912;
+}

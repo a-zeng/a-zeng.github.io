@@ -17,64 +17,7 @@
         <link rel="stylesheet" href="css/body.css">
         
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load('current', {'packages':['timeline']});
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
-            var container = document.getElementById('timeline');
-            var chart = new google.visualization.Timeline(container);
-            var dataTable = new google.visualization.DataTable();
-            var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
-
-            dataTable.addColumn({ type: 'string', id: 'Skill' });
-            dataTable.addColumn({ type: 'string', id: 'Category' });
-            dataTable.addColumn({ type: 'string', id: 'Name' });
-            dataTable.addColumn({ type: 'date', id: 'Start' });
-            dataTable.addColumn({ type: 'date', id: 'End' });
-            dataTable.addRows([
-              [ 'SolidWorks', 'Engineering', '', new Date(2019, 8, 1), new Date(2020, 11, 4) ],
-              [ 'SolidWorks', 'Engineering', 'CSWA', new Date(2020, 11, 4), new Date(utc) ],
-              [ 'Fusion 360', 'Engineering', '', new Date(2016, 4, 1),  new Date(utc) ],
-              [ 'AutoCAD', 'Engineering', '', new Date(2019, 8, 1),  new Date(utc) ]]);
-
-            var colors = [];
-            var colorMap = {
-                Engineering: '#0000ff',
-                Coding: '#ff0000'
-            }
-            for (var i = 0; i < dataTable.getNumberOfRows(); i++) {
-                colors.push(colorMap[dataTable.getValue(i, 1)]);
-            }
-              
-            var rowHeight = 50;
-            var chartHeight = (dataTable.getNumberOfRows() + 1) * rowHeight;
-              
-            var options = {
-                timeline: { 
-                    groupByRowLabel: true,
-                    rowLabelStyle: {
-                        fontName: 'SB Body',
-                        fontSize: '20',
-                    },
-                    barLabelStyle: {
-                        fontName: 'SB Body',
-                        fontSize: '16',
-                    }
-                },                          
-                avoidOverlappingGridLines: true,
-                height: chartHeight,
-                fontName: 'SB Body',
-                width: '100%',
-                colors: colors
-            };
-              
-            // use a DataView to hide the category column from the Timeline
-            var view = new google.visualization.DataView(dataTable);
-            view.setColumns([0, 2, 3, 4]);
-              
-            chart.draw(view, options);
-          }
-        </script>
+        <script type="text/javascript" src="js/timeline.js"></script>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
@@ -543,7 +486,36 @@
                 
                 
                 <!-- Skills Section Content-->
-                <h2 class="text-center text-secondary">Experience Timeline</h2>
+                <h2 class="text-center text-secondary mb-4">Experience Timeline</h2>
+                <div class="container mb-2">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="box project"></div>
+                            <p>Projects</p>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="box certification"></div>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="box coding"></div>
+                            <p>Coding</p>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="box general"></div>
+                            <p>General Programs</p>
+                        </div>
+                        <div class="col-sm-4 col-lg-6">
+                            <div class="box engineering-programs"></div>
+                            <p>Engineering Programs</p>
+                        </div>
+                        <div class="col-sm-4 col-lg-6">
+                            <div class="box engineering-skills"></div>
+                            <p>Engineering Skills</p>
+                        </div>
+                        
+                    </div>
+                </div>
                 <div class="justify-content-center" id="timeline" style="width: 100%"></div>    
                 
             </div>
