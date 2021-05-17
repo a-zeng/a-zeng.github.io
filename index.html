@@ -23,6 +23,8 @@
     </head>
     <!-- *********************************** HEAD END *********************************** -->
     
+    
+    
     <!-- *********************************** BODY START *********************************** -->
     <body id="page-top">
         <!-- ............................. NAVBAR START ............................. -->
@@ -71,18 +73,33 @@
                 <div class="text-center">
                     <h2 class="page-section-heading text-secondary mb-0 d-inline-block">PROJECTS</h2>
                 </div>
+                
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                
+                <!-- Filtering Buttons -->
+                <div class="filtering-buttons mb-5">
+                    <p class="text-center">Sort by project type:</p>
+                    <div class="container col-lg-8">
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="View selector">
+                            <button onclick="sortAll()" class="btn btn-secondary mx-auto">All</button>
+                            <button onclick="sortCAD()" class="btn btn-info mx-auto">CAD</button>
+                            <button onclick="sortRobotics()" class="btn btn-danger mx-auto">Robotics</button>
+                            <button onclick="sortCoding()" class="btn btn-success mx-auto">Coding</button>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
                     
                     <!-- MMX CAD Team -->
-                    <div class="col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-mmx">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Marble Machine X (MMX) CAD Team</p></div>
@@ -90,8 +107,17 @@
                         </div>
                     </div>
 
+                    <!-- Rover -->
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Northeastern University Mars Rover Team </p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/rover/rover-wide.png" alt="Circus Tent"/>
+                        </div>
+                    </div>
+                    
                     <!-- SARndbox v2 -->
-                    <div class="col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-code sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-sarndbox">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Augmented Reality Sandbox v2.0</p></div>
@@ -99,17 +125,8 @@
                         </div>
                     </div>
 
-                    <!-- Rover -->
-                    <div class="col-md-12 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>Northeastern University Mars Rover Team </p></div>
-                            </div><img class="img-fluid" src="assets/img/projects/rover/rover-wide.png" alt="Circus Tent"/>
-                        </div>
-                    </div>
-
                     <!-- Plastic Tuba -->
-                    <div class="col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-tuba">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>High School Senior CAPStone - Plastic Tuba</p></div>
@@ -118,7 +135,7 @@
                     </div>
 
                     <!-- Practice Marimba -->
-                    <div class="col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-marimba">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Practice Marimba</p></div>
@@ -127,7 +144,7 @@
                     </div>
 
                     <!-- SeaPerch -->
-                    <div class="col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-seaperch">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>High School - SeaPerch Robotics</p></div>
@@ -307,12 +324,33 @@
                                         </div>
 
                                         <!-- Portfolio Modal - Text-->
-                                        <p>The Northeastern Mars Rover Team was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' deserty terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a></p>
+                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' deserty terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a></p>
                                         
                                         <p>In the past three years that the team has competed, we've been accepted for field competition all years, achieving our highest Systems Acceptance Review (SAR) score in 2021. Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
                                         
-                                        <p>As one of the mobility team leads for the 2021 competition year, my task was to oversee the design and manufacture of the frame of the rover, consisting of both the chassis and the mobility system. However, due to restrictions from COVID-19, the mobility team had limited to no access to work spaces. Thus, our plans shifted to focus on testing the rover whenever possible and finishing remaining projects from the previous year, notably the 3D printed wheels.</p>
+                                        <h2 class="mt-3">2019-2020 Season - Watney MK2</h2>
                                         
+                                        <p>I joined NUROVER in the 2020 season as part of the mobility team. This year, the mobility system was comprised of a 6-wheel drive rocker-bogie system. The rocker-bogie system is connected via a bar differential, which ensures that the rover can maintain at least 3 wheels on the ground even when traversing large obstacles. Compared to the previous year, the bar differential is a massive improvement since our implementation of a gear differential had signifcant backlash issues, rendering the rocker-bogie system significantly less effective. Each wheel is individually powered by a high-torque motor, allowing our rover to scale hilly terrain and slopes of over 45 degrees.</p>     
+                                        
+                                        <div class="pic">
+                                            <a href="assets/img/projects/rover/differential-comparison.png">
+                                                <img class="img-fluid rounded" src="assets/img/projects/rover/differential-comparison.png"\ alt="Comparison between bar and gear differentials">
+                                            </a>
+                                            <p><b>Comparison between the new bar differential and old gear differential</b></p>
+                                        </div>
+                                        
+                                        <div class="pic">
+                                            <a href="assets/img/projects/rover/rover-2020.png">
+                                                <img class="img-fluid rounded" src="assets/img/projects/rover/rover-2020.png"\ alt="Picture of the 2020 Rover">
+                                            </a>
+                                            <p><b>Picture of the 2020 Rover SolidWorks CAD</b></p>
+                                        </div>
+                                        
+                                        
+                                        <h2 class="mt-3">2020-2021 Season - Watney MK2.1</h2>
+                                        
+                                        <p>As one of the mobility team leads for the 2021 competition year, my task was to oversee the design and manufacture of the frame of the rover, consisting of both the chassis and the mobility system. However, due to restrictions from COVID-19, the mobility team had limited to no access to work spaces. Thus, our plans shifted to focus on testing the rover whenever possible and projects that do not require lab space, for example, fabricating 3D printed wheels.</p>
+                                            
                                         <div class="gif">
                                             <a href="assets/img/projects/rover/rover-wheel.gif" target="_blank">
                                                 <img class="img-fluid rounded" src="assets/img/projects/rover/rover-wheel.gif"\ alt="GIF of 3D Printed Wheels">
@@ -320,7 +358,17 @@
                                             <p><b>Rendered Pan Around the 3D Printed Wheel</b></p>
                                         </div>
                                         
+                                        <p>These 3D printed wheels are printed from 95A hardness TPU, which when combined with the honeycomb interior pattern, allow the wheel to be compliant, lightweight, and air-less. After much research into the tread pattern and creating multiple tread prototypes, we opted to go for a design similar to NASA's Curiosity rover. Additionally, using SolidWorks FEA, the maximum Von Mises stress that the wheel endures is less than 0.3 MPA, which is far below the 12 MPA tensile yield strength of the material.</p>
+                                            
+                                        <div class="pic">
+                                            <a href="assets/img/projects/rover/rover-wheel-fea.png">
+                                                <img class="img-fluid rounded" src="assets/img/projects/rover/rover-wheel-fea.png" alt="FEA of Wheel">
+                                            </a>
+                                            <p><b>FEA of the Wheel, Assuming 41 N Distributed Load</b></p>
+                                        </div>
+                                        
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -372,10 +420,10 @@
                                             <p><b>Enlarged image of me and the tuba</b></p>
                                         </div>
                                         <div>
-                                            <iframe src="assets/pdf/CAPStone%20AM%20Instrument%20Poster.pdf" style="width: 100%; height: 90vh"></iframe>
+                                            <embed src="assets/pdf/CAPStone%20AM%20Instrument%20Poster.pdf" style="width: 100%; height: 90vh"></embed>
                                             <p><b>CAPStone Showcase Poster</b></p>
                                         </div>
-                                        <div>
+                                        <div class="pic">
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-lg-6">
@@ -393,7 +441,7 @@
                                             <p><b>Images of the tuba without valves (left) and the the valve (right)</b></p>
                                         </div>
                                         <div>
-                                            <iframe src="assets/pdf/Research%20Paper%20-%20Viability%20of%20Additive%20Manufacturing%20in%20Musical%20Instruments.pdf" style="width: 100%; height: 90vh"></iframe>
+                                            <embed src="assets/pdf/Research%20Paper%20-%20Viability%20of%20Additive%20Manufacturing%20in%20Musical%20Instruments.pdf" style="width: 100%; height: 90vh"></embed>
                                             <p><b>CAPStone Research Paper - Viability of Additive Manufacturing in Brass Instruments</b></p>
                                         </div>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -476,9 +524,79 @@
                                             <div class="divider-custom-icon"><i class="fas fa-water"></i></div>
                                             <div class="divider-custom-line"></div>
                                         </div>
-                                        <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="Submarine"/>
+                                        
+                                        <!-- Portfolio Modal - Image--><a href="assets/img/projects/seaperch/rov-underwater.jpg">
+                                        <img class="img-fluid rounded mb-5" src="assets/img/projects/seaperch/rov-underwater.jpg" alt="ROV Submerged Underwater"/></a>
+                                        
                                         <!-- Portfolio Modal - Text-->
-                                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                        <p>SeaPerch is an underwater robotics competition that uses a budget-friendly remotely-operated vehicle (ROV) to traverse an obstacle course and complete pre-designated tasks. The ROV is made using the base kit, which contains their default ROV, alongside $20 for off-the-shelf parts. </p>
+                                        
+                                        <h2 class="mt-3">2018 Season - Hammerhead</h2>
+                                        
+                                        <p>This year's design was named for its similar appearance to a Hammerhead shark. This frame design allowed the thrust motor to be further in front of the ROV center of mass, allowing an easier time manipulating objects due to a greater moment. The main feature of our design was the implementation of Kort nozzles, or ducted propellors. In theory, these propellor housings create larger differences in pressure, increasing the efficiency of the propellor and providing greater thrust. These were designed using Fusion 360 and then 3D printed using PLA, costing $0.62 each in raw filament costs (49.07 grams total at $0.025/g).</p>     
+                                        
+                                        <div class="pic">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <a href="assets/img/projects/seaperch/hammerhead-cad.png">
+                                                            <img class="img-fluid rounded" src="assets/img/projects/seaperch/hammerhead-cad.png" target="_blank" alt="CAD of the Hammerhead">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <a href="assets/img/projects/seaperch/hammerhead-underwater.png">
+                                                            <img class="img-fluid rounded" src="assets/img/projects/seaperch/hammerhead-underwater.png" target="_blank" alt="Image of the Hammerhead">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p><b>Images of the Hammerhead CAD (left) and the actual Hammerhead ROV (right)</b></p>
+                                        </div>
+                                        
+                                        <p>In the end, our Hammerhead and the engineering notebook documenting the engineering behind it granted us 3rd place engineering notebook and notebook presentation at the 2018 International SeaPerch Challenge. Additionally, the team got featured in a local newpaper (link <a href="https://www.andovertownsman.com/news/education/ahs-students-participate-in-international-underwater-robot-competition/article_a205a124-8bb7-5527-a15f-b84bda76f6f3.html" target="_blank">here</a>).</p>
+                                        
+                                        <div class="pdf">
+                                            <embed src="assets/pdf/HS_AndoverHighSchool_Sharks.pdf" style="width: 100%; height: 90vh"></embed>
+                                            <p><b>2018 Award Winning Engineering Notebook</b></p>
+                                        </div>
+                                    
+                                        <h2 class="mt-3">2019 Season - Jaws</h2>
+                                        
+                                        <p>From competing at the international competition, our main takeaway was that in order to have a competitive ROV, the design had to be as lightweight, hydrodynamic, and slim as possible. As such, we made it our main goal for the 2019 season to reduce ROV drag and minimize weight as much as possible. Also, I wanted to push the boundaries of what I knew of CAD, so I opted to focus entirely on CAD and simulation.</p>
+                                    
+                                        <div class="pic">
+                                            <a href="assets/img/projects/seaperch/seaperch_render.png">
+                                                <img class="img-fluid rounded" src="assets/img/projects/seaperch/seaperch_render.png"\ alt="CAD of 2020 ROV">
+                                            </a>
+                                            <p><b>CAD of 2020 ROV, Jaws</b></p>
+                                        </div>
+                                    
+                                        <p>In this year's competition, one of the main objectives was to trigger beacon consisting of a Hall effect sensor with magnets. This task requires a team-designed "triggerer", which I opted to 3D print. After prototyping and iterating the design (more about this in the enginereing notebook), the end "triggerer" was significantly lighter, more hydrodynamic, and customizable than anything that we could have made by hand.</p>
+                                    
+                                        <div class="pic">
+                                            <a href="assets/img/projects/seaperch/beacon-triggerer.png">
+                                                <img class="img-fluid rounded" src="assets/img/projects/seaperch/beacon-triggerer.png" alt="Picture of the Beacon Triggerer" width="350px">
+                                            </a>
+                                            <p><b>Picture of the Final Beacon "Triggerer" Design</b></p>
+                                        </div>
+                                    
+                                        <p>As for simulations, I opted to delve further by learning fluid simulation software, namely Autodesk Flow. By inputting the design of the ROV and estimated parameters for water, I was able to determine that the coefficient of drag would be 0.92 for our design. However, upon adding two motor caps to streamline the fluid flow, the drag coefficient was reduced noticeably to 0.72 (full documentation in the engineering notebook). </p>
+                                    
+                                        <div class="pic">
+                                            <a href="assets/img/projects/seaperch/fluid-simulation.png">
+                                                <img class="img-fluid rounded" src="assets/img/projects/seaperch/fluid-simulation.png"\ alt="Autodesk Flow Fluid Tunnel Simulation">
+                                            </a>
+                                            <p><b>Fluid Tunnel Simulation for Drag Coefficient Determination</b></p>
+                                        </div>
+                                    
+                                        <p>Fortunately, our efforts paid off and we were able to head to the 2019 International SeaPerch Challenge. Unfortunately this year, engineering notebook did not factor into scores, which was our strong suit. However, due to our stellar engineering notebook, we were selected to present our ROV in a special engineering presentation. Overall, we placed 9th in the high school division of the Challenge.</p>
+                                    
+                                        <div class="pdf">
+                                            <embed src="assets/pdf/Final%20Engineering%20Notebook%20Sharks%202019.pdf" style="width: 100%; height: 90vh"></embed>
+                                            <p><b>2019 Engineering Notebook</b></p>
+                                        </div>
+                                        
+                                        
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
                                 </div>
@@ -623,23 +741,31 @@
         </footer>
         <!-- ............................. FOOTER END ............................. -->
         
-        
         <!-- Copyright Section-->
         <section class="copyright py-4 text-center text-white">
             <div class="container"><small class="pre-wrap">Copyright © Alex Zeng 2021</small></div>
         </section>
+        
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
         <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
+        
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+        <!-- Sorting Buttons-->
+        <script src="js/sort-buttons.js"></script>
+        
     </body>
     <!-- *********************************** BODY END *********************************** -->
 </html>
