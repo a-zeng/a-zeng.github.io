@@ -7277,7 +7277,6 @@ h3 {
       font-size: 1.5em; } }
 
 .masthead {
-  background-image: url(../assets/img/bg/marble-paths.png);
   background-size: cover;
   background-position: center;
   padding-top: calc(6rem + 74px);
