@@ -1,2 +1,4 @@
 # portfolio-v2
- A new look to my portfolio
+New look to the original portfolio!
+
+Hopefully will be constantly updated
