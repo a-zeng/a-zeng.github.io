@@ -55,8 +55,8 @@ li {
 
 .about-me-subpic {
     min-width: 400px;
-    width: 40vmin;
-    max-width: 50vmin; 
+    width: 60vmin;
+    max-width: 60vmin; 
     padding: 5px;  
     border: 0.5em solid white; 
     object-fit: fill; 
