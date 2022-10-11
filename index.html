@@ -20,16 +20,6 @@
 
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="js/timeline.js"></script>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TWELD93T7"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'G-6TWELD93T7');
-        </script>
     </head>
     <!-- *********************************** HEAD END *********************************** -->
     
@@ -70,7 +60,7 @@
                 <h1 class="masthead-heading mb-3">ALEX ZENG</h1>
                 <!-- Masthead Subheading-->
                 <p class="pre-wrap masthead-subheading font-weight-light mb-3">Mechanical Engineer | Maker | 3D Printing Enthusiast</p>
-                <a href="/assets/pdf/AZeng_ME_Resume_Latest.pdf" class="btn btn-light mb-5"><i class="fas fa-download" target="_blank"></i> Download Resume</a>
+                <a href="/assets/pdf/AZengResume_Latest.pdf" class="btn btn-light mb-5"><i class="fas fa-download" target="_blank"></i> Download Resume</a>
             </div>
 
         </header>
@@ -94,13 +84,29 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 
+                <!-- Featured Projects! -->
+                <div class="text-center row justify-content-center">
+                    <h3 class="text-secondary col-lg-12 mb-4 d-inline-block">FEATURED PROJECTS</h2>
+                    
+
+                    
+                </div>
+
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
                 <!-- Filtering Buttons -->
                 <div class="filtering-buttons mb-5">
-                    <p class="text-center">Sort by project type:</p>
+                    <h3 class="text-center text-secondary">SORT BY PROJECT TYPE:</p>
                     <div class="container col-lg-8">
                         <div class="btn-group d-flex justify-content-center" role="group" aria-label="View selector">
                             <button onclick="sortAll()" class="btn btn-secondary mx-auto">All</button>
-                            <button onclick="sortCAD()" class="btn btn-info mx-auto">Design & CAD</button>
+                            <button onclick="sortCAD()" class="btn btn-info mx-auto">Design</button>
+                            <button onclick="sortManufacturing()" class="btn btn-dark mx-auto">Manufacturing</button>
                             <button onclick="sortRobotics()" class="btn btn-danger mx-auto">Robotics</button>
                             <button onclick="sortCoding()" class="btn btn-success mx-auto">Coding</button>
                         </div>
@@ -111,6 +117,8 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
                     
+<<<<<<< Updated upstream
+=======
                     <!-- 2020 Rover -->
                     <!-- <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover20">
@@ -120,8 +128,26 @@
                         </div>
                     </div> -->
 
+                    <!-- Monolayer Capstone Project -->
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-monolayer">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Capstone Project - Automated Marangoni Monolayer Transfer Technique</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/monolayer/transfer prototype 2.png" alt="Image"/>
+                        </div>
+                    </div>
+
+                    <!-- Viterbi Case -->
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-viterbi">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Machined Case for Split Ergonomic Mechanical Keyboard</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/viterbi/PXL_20220207_204558063.jpg" alt="Image"/>
+                        </div>
+                    </div>
+
                     <!-- 2022 Rover -->
-                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover22">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Watney MK3 (2022) - Northeastern University Mars Rover Team </p></div>
@@ -130,7 +156,7 @@
                     </div>
 
                     <!-- 2021 Rover -->
-                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover21">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Watney MK2.1 (2021) - Northeastern University Mars Rover Team </p></div>
@@ -138,6 +164,7 @@
                         </div>
                     </div>
 
+>>>>>>> Stashed changes
                     <!-- MMX CAD Team -->
                     <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-mmx">
@@ -147,9 +174,18 @@
                             <img class="img-fluid" src="assets/img/projects/mmx/mmx-pan.gif" alt="MMX"/>
                         </div>
                     </div>
+
+                    <!-- Rover -->
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Northeastern University Mars Rover Team </p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/rover/nurover-pan.gif" alt="Pan Around the Rover"/>
+                        </div>
+                    </div>
                     
                     <!-- SARndbox v2 -->
-                    <div class="sort-all sort-code sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-code sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-sarndbox">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Augmented Reality Sandbox v2.0</p></div>
@@ -158,7 +194,7 @@
                     </div>
 
                     <!-- Plastic Tuba -->
-                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-tuba">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>High School Senior CAPStone - Plastic Tuba</p></div>
@@ -167,7 +203,7 @@
                     </div>
 
                     <!-- Practice Marimba -->
-                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-marimba">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Practice Marimba</p></div>
@@ -176,7 +212,7 @@
                     </div>
 
                     <!-- SeaPerch -->
-                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-seaperch">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>High School - SeaPerch Robotics</p></div>
@@ -272,17 +308,6 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="align-top float-right"><b>Design Process: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Design the track by first modelling its form, then adding more intricate features like the 3D sweep</li>
-                                                            <li>Cross-check the design with the track on the machine using recent images of the track and its surroundings</li>
-                                                            <li>Iterate on the design, whether by adding missing features or other features found through part alignment</li>
-                                                            <li>Repeat if there are any changes to the track or machine</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
                                                     <td class="align-top float-right"><b>Challenges: </b></th>
                                                     <td class="w-75">
                                                         <ul>
@@ -325,17 +350,6 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="align-top float-right"><b>Design Process: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Work backwards from the original, fully-featured CAD part by determining places of simplification and removal (magnets)</li>
-                                                            <li>Merge sketches of parts on parallel planes</li>
-                                                            <li>Compare to the demag wheel on the machine and add missing features</li>
-                                                            <li>Iterate on the the part as changes are made</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
                                                     <td class="align-top float-right"><b>Challenges: </b></th>
                                                     <td class="w-75">
                                                         <ul>
@@ -369,20 +383,9 @@
                                                     <td class="align-top float-right"><b>Objectives: </b></th>
                                                     <td class="w-75">
                                                         <ul>
-                                                            <li>Defeature and simplify the Divide By 4</li>
+                                                            <li>Defeature and simplify the Demag Wheel</li>
                                                             <li>Update the length to match the current design on the machine</li>
                                                             <li>Add a felt stop at the flipper</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Design Process: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Determine modifications made on the real-life part compared to the latest CAD model (added length to tubing, added offset to side steel plate for adjustability)</li>
-                                                            <li>Model the part from the ground up since the latest model was too bloated to rework</li>
-                                                            <li>Compare the new CAD to the real-life part, checking for differences and missed out features</li>
-                                                            <li>Iterate as changes are made</li>
                                                         </ul>
                                                     </td>
                                                 </tr>
@@ -517,8 +520,8 @@
                 </div>
             </div>
             
-            <!-- 2020 Rover -->
-            <div class="portfolio-modal modal fade" id="pm-rover20" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
+            <!-- Rover -->
+            <div class="portfolio-modal modal fade" id="pm-rover" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl" role="document">
                     <div class="modal-content">
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
@@ -540,12 +543,13 @@
 
                                         <!-- Portfolio Modal - Image-->
                                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/G44AWOTWqOM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/iy6D_sH8bxg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>
 
                                         <!-- Portfolio Modal - Text-->
-                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a>
-                                            Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
+                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a></p>
+                                        
+                                        <p>In the past three years that the team has competed, we've been accepted for field competition all years, achieving our highest Systems Acceptance Review (SAR) score in 2021. Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
                                         
                                         <hr>
                                         <div id="2019-2020-Rover-Season">
@@ -608,54 +612,12 @@
                                                 <p><b>Picture of the 2020 Mobility System CAD</b></p>
                                             </div>
                                         </div>
-                                                                               
-                                        
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2021 Rover -->
-            <div class="portfolio-modal modal fade" id="pm-rover21" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Watney MK2.1</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A Mars rover made by Northeastern students for competition in the University Rover Challenge (URC)
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a>
-                                        Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
                                         
                                         <hr>
-                                        
                                         <div id="2020-2021-Rover-Season">
-                                            <h2 class="mt-3">2020-2021 Season - 3D Printed Wheels</h2>
+                                            <h2 class="mt-3">2020-2021 Season - Watney MK2.1</h2>
                                         
                                             <p>As one of the mobility team leads for the 2021 competition year, my task was to oversee the design and manufacture of the frame of the rover, consisting of both the chassis and the mobility system. However, due to restrictions from COVID-19, the mobility team had limited to no access to university manufacturing or work spaces. Thus, our plans shifted to focus on testing the rover whenever possible and projects that do not require lab space, for example, fabricating 3D printed wheels.</p>
-
-                                            <!-- Portfolio Modal - Image-->
-                                            <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/iy6D_sH8bxg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
 
                                             <table>
                                                 <tr>
@@ -738,6 +700,8 @@
                 </div>
             </div>
             
+<<<<<<< Updated upstream
+=======
             <!-- 2022 Rover -->
             <div class="portfolio-modal modal fade" id="pm-rover22" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl" role="document">
@@ -801,7 +765,7 @@
                                                             <li>Determining anticipated loads per joint of the arm</li>
                                                             <li>Procuring parts for the arm from the most optimal vendors</li>
                                                             <li>Estimating cost and weight of the arm prior to assembly</li>
-                                                            <li>Creating a custom arm control solution that is more intuitive for users</li>
+                                                            <li>Creating a custom arm control solution (joint-replica model) that is more intuitive for users</li>
                                                         </ul>
                                                     </td>
                                                 </tr>
@@ -813,21 +777,12 @@
                                                             <li>Cost $3,406.92</li>
                                                             <li>Weighs ~9kg</li>
                                                             <li>Can lift 6kg at 1m and manipulate objects</li>
-                                                            <li>Controllable via</li>
+                                                            <li>Controllable via haptic arm (joint-replica model) </li>
                                                             <li>16th place of 36 teams during competition as a team that has never gone to Utah</li>
                                                         </ul>
                                                     </td>
                                                 </tr>
                                                 
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Even a little bit of backlash or slop in a rocker-bogie system hinders it immensely</li>
-                                                            <li>The bar differential worked better than the gear differential</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
                                             </table>
                                         </div>
                                         
@@ -842,6 +797,7 @@
                 </div>
             </div>
 
+>>>>>>> Stashed changes
             <!-- Plastic Tuba -->
             <div class="portfolio-modal modal fade" id="pm-tuba" tabindex="-1" role="dialog" aria-labelledby="#pm-tubaLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl" role="document">
@@ -985,7 +941,7 @@
                                         </div>
                                         <!-- Portfolio Modal - Text-->
                                         <p>
-                                            I've always wanted to build my own marimba from raw materials since it would be cheaper than purchasing a new instrument. However, I have limited access to tools at my house, so while such an idea is not impossible, it is costly once tool purchasing costs are considered. One day, while browsing a used percussion equipment group, I found a listing for used marimba bars for $800. For context, the cheapest 4.3 octave marimba costs around $2500, with most of the cost coming from the skilled labor required for accurate tuning of marimba bars. I thought this was a great deal and perfect way to get a practice instrument, so I bought the bars and started working.
+                                            I've always wanted to build my own marimba from raw materials due to being significantly cheaper than purchasing a new instrument. However, I have limited access to tools at my house, so while such an idea is not impossible, it is costly once tool purchasing costs are considered. One day, while browsing a used percussion equipment group, I found a listing for used marimba bars for $800. For context, the cheapest 4.3 octave marimba costs around $2500, with most of the cost coming from the skilled labor required for accurate tuning of marimba bars. I thought this was a great deal and perfect way to get a practice instrument, so I bought the bars and started working.
                                         </p>
                                         <!-- Portfolio Modal - Image-->
                                         <div>
@@ -1474,6 +1430,172 @@
                 </div>
             </div>
 
+            <!-- Monolayer  -->
+            <div class="portfolio-modal modal fade" id="pm-monolayer" tabindex="-1" role="dialog" aria-labelledby="#pm-monolayer" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-3">Automated Monolayer Transfer</h2>
+                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
+                                            A machine that dispenses a solution of particles onto water, densifies them into a single layer sheet, then transfers the sheet (monolayer) to a substrate
+                                        </h4>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Text-->
+                                        <p>
+                                            Coming soon!
+                                        </p>
+                                        <!-- Portfolio Modal - Image-->
+                                        <div>
+                                            <a href="assets/img/projects/">
+                                                <img class="img-fluid rounded" src="assets/img/projects/monolayer/transfer prototype 2.png"\ alt="Image">
+                                            </a>
+                                            <p><b>Image placeholder</b></p>
+                                        </div>
+                                        <div id="category-table">
+                                            <table class="mb-4">
+                                                <tr>
+                                                    <td class="align-top float-right"><b>Objectives: </b></th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-top float-right"><b>Challenges: </b></th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-top float-right"><b>Results: </b></th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-top float-right">
+                                                        <b>Takeaways: </b>
+                                                    </th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viterbi -->
+            <div class="portfolio-modal modal fade" id="pm-viterbi" tabindex="-1" role="dialog" aria-labelledby="#pm-viterbi" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary mb-3">Viterbi Case</h2>
+                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
+                                            A machined aluminum case for a split ergonomic keyboard (<a href="https://keeb.io/products/viterbi-keyboard-pcbs-5x7-70-split-ortholinear">Viterbi</a>)
+                                        </h4>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Text-->
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at pretium turpis. Aenean ut vulputate odio. Sed convallis justo arcu, et rutrum mauris commodo non. Sed commodo suscipit enim, at suscipit ex elementum quis. Pellentesque eget nunc congue, auctor felis ut, commodo lacus. Nulla non placerat erat. Nullam feugiat magna non velit pretium, ac varius justo porta. Vestibulum venenatis facilisis ipsum, quis vulputate tortor sodales molestie. Morbi non cursus massa, eget fringilla lectus. Mauris faucibus sem ligula, nec dictum lectus vehicula a. Donec id viverra nunc. Phasellus vulputate purus eu interdum viverra. Nullam rutrum dignissim lectus, ultricies aliquam libero fringilla imperdiet. Mauris sit amet nunc a ipsum pharetra tristique. Vestibulum libero velit, tempus quis magna ut, mattis ultrices augue.
+                                        </p>
+                                        <!-- Portfolio Modal - Image-->
+                                        <div>
+                                            <a href="assets/img/projects/">
+                                                <img class="img-fluid rounded" src="assets/img/projects/"\ alt="Image">
+                                            </a>
+                                            <p><b>Image placeholder</b></p>
+                                        </div>
+                                        <div id="category-table">
+                                            <table class="mb-4">
+                                                <tr>
+                                                    <td class="align-top float-right"><b>Objectives: </b></th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-top float-right"><b>Challenges: </b></th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-top float-right"><b>Results: </b></th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-top float-right">
+                                                        <b>Takeaways: </b>
+                                                    </th>
+                                                    <td class="w-75">
+                                                        <ul>
+                                                            <li>List item 1</li>
+                                                            <li>List item 2</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Placeholder -->
             <div class="portfolio-modal modal fade" id="pm-placeholder" tabindex="-1" role="dialog" aria-labelledby="#pm-placeholderLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl" role="document">
@@ -1576,31 +1698,12 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="justify-content-center my-auto p-3 col-md-12 col-lg-9">
-                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a third-year mechanical engineering student at Northeastern University who's looking to graduate in December 2023 with a bachelor's degree in mechanical engineering.</p>
-
-                        <p class="pre-wrap lead">Realizing design concepts that have been ruminating in your head and watching them work EXACTLY as expected or even benefitting others is a feeling like no other. Reaching that end goal is what inspires me to hone my skills as a mechanical engineer and keep tackling new challenges.</p>
-
-                        <p class="pre-wrap lead">When I'm not doing homework or studying, I enjoy printing anything I can fathom with my 3D printer, tinkering with things (and consequently making a mess that I enjoy cleaning up), playing music on my tuba or DIY practice marimba, and losing track of time playing my favorite video games.</p>
+                    <div class="d-flex justify-content-center my-auto p-3 col-md-12 col-lg-9">
+                        <p class="pre-wrap lead">I'm Alex Zeng, a mechanical engineering student at Northeastern University that is interested in learning as much as I can about mechatronics and mechanical design. When I'm not doing homework or studying, I enjoy making things, tinkering, playing music, and gaming.</p>
                     </div>
-                    <div class="d-flex justify-content-center mx-auto my-auto col-md-12 col-lg-3">
+                    <div class="d-flex justify-content-center mx-auto col-md-12 col-lg-3">
                         <img class="mb-3 portfolio-pic" src="assets/img/pic.jpg" alt="">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="d-flex justify-content-center my-auto">
-                            <img class="mb-3 about-me-subpic" src="assets/img/pic_rover.jpg" alt="">
-                        </div>
-                        <p class="lead about-me-caption">Working on the Northeastern Mars Rover</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="d-flex justify-content-center mx-auto my-auto">
-                            <img class="mb-3 about-me-subpic" src="assets/img/pic_tuba.jpg" alt="">
-                        </div>
-                        <p class="lead about-me-caption">Playing tuba in Northeastern's Pep Band</p>
-                    </div>
-                    
                 </div>
             </div>
         </section>
@@ -1755,7 +1858,8 @@
         <script src="js/scripts.js"></script>
         
         <!-- Sorting Buttons-->
-        <script src="js/sort-buttons.js"></script>  
+        <script src="js/sort-buttons.js"></script>
+        
     </body>
     <!-- *********************************** BODY END *********************************** -->
 </html>
