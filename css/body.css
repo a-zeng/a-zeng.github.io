@@ -53,6 +53,20 @@ li {
     border-radius: 50%;
 }
 
+.about-me-subpic {
+    min-width: 400px;
+    width: 60vmin;
+    max-width: 60vmin; 
+    padding: 5px;  
+    border: 0.5em solid white; 
+    object-fit: fill; 
+    border-radius: 10%;
+}
+
+.about-me-caption {
+    text-align: center;
+}
+
 .box {
     float: left;
     width: 20px;

@@ -18,6 +18,7 @@ function drawChart() {
         ['SolidWorks', 'Project', 'NUROVER', new Date(2019, 10, 4), new Date(utc)],
         ['SolidWorks', 'Certification', 'CSWA - Mechanical Design Certified', new Date(2020, 11, 4), new Date(utc)],
         ['SolidWorks', 'Job', 'MKS Instruments', new Date(2021, 0, 11), new Date(2021, 5, 25)],
+        ['SolidWorks', 'Job', 'Vicarious Surgical', new Date(2022, 0, 10), new Date(2022, 5, 24)],
         
 
         ['Fusion 360', 'EngineeringPrograms', 'Total Fusion 360 Experience', new Date(2016, 4, 0),  new Date(utc)],
@@ -47,7 +48,7 @@ function drawChart() {
         ['Tools / Machines', 'EngineeringSkills', 'Hand Tool Experience', new Date(2015, 9, 0),  new Date(utc)],
         ['Tools / Machines', 'EngineeringSkills', 'Soldering Experience', new Date(2018, 2, 0),  new Date(utc)],
         ['Tools / Machines', 'EngineeringSkills', 'Power Tool Experience', new Date(2016, 9, 0),  new Date(utc)],
-        ['Tools / Machines', 'EngineeringSkills', 'CNC Mill Experience', new Date(2020, 1, 0),  new Date(2020, 3, 0)],
+        ['Tools / Machines', 'EngineeringSkills', 'CNC Mill and Lathe Experience', new Date(2021, 8, 0),  new Date(utc)],
         
 
         ['FEA', 'EngineeringSkills', 'Total Finite Element Analysis (FEA) Experience', new Date(2019, 3, 0),  new Date(utc)],
