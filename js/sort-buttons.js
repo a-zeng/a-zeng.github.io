@@ -12,6 +12,11 @@ function sortCAD() {
     $(".sort-cad").fadeIn();
 }
 
+function sortManufacturing() {
+    $(".sort-all").hide();
+    $(".sort-mf").fadeIn();
+}
+
 function sortCoding() {
     $(".sort-all").hide();
     $(".sort-code").fadeIn();
