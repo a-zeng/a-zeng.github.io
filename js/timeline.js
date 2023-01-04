@@ -22,26 +22,29 @@ function drawChart() {
         
 
         ['Fusion 360', 'EngineeringPrograms', 'Total Fusion 360 Experience', new Date(2016, 4, 0),  new Date(utc)],
-        ['Fusion 360', 'Project', 'Robotics - Robot Design', new Date(2016, 9, 0),  new Date(2019, 4, 20)],
-        ['Fusion 360', 'Project', 'SeaPerch - ROV Design', new Date(2018, 1, 0),  new Date(2019, 4, 20)],
+        ['Fusion 360', 'Project', 'FTC Robotics - CAD', new Date(2016, 9, 0),  new Date(2019, 4, 20)],
+        ['Fusion 360', 'Project', 'SeaPerch - ROV CAD', new Date(2018, 1, 0),  new Date(2019, 4, 20)],
         ['Fusion 360', 'Project', 'Plastic Tuba - CAD', new Date(2019, 0, 12),  new Date(2019, 4, 20)],
         ['Fusion 360', 'Project', 'Practice Marimba - CAD', new Date(2020, 7, 17),  new Date(2020, 7, 28)],
         ['Fusion 360', 'Job', 'Nextera Robotics', new Date(2021, 5, 1),  new Date(2021, 7, 24)],
         ['Fusion 360', 'Project', 'MMX CAD Team', new Date(2020, 4, 24),  new Date(utc)],
-        ['Fusion 360', 'Project', 'DIY Binaural Microphone', new Date(2021, 6, 1),  new Date(utc)],
+        ['Fusion 360', 'Project', 'DIY Binaural Microphone', new Date(2021, 6, 1),  new Date(2021, 7, 1)],
         
 
-        ['AutoCAD', 'EngineeringPrograms', 'Total AutoCAD Experience', new Date(2019, 8, 0),  new Date(utc)],
+        // ['AutoCAD', 'EngineeringPrograms', 'Total AutoCAD Experience', new Date(2019, 8, 0),  new Date(utc)],
         
 
         ['MATLAB', 'EngineeringPrograms', 'Total MATLAB Experience', new Date(2019, 8, 0),  new Date(utc)],
         ['MATLAB', 'Project', 'Labs for Academic Courses', new Date(2020, 1, 3),  new Date(utc)],
+        ['MATLAB', 'Project', 'NUROVER Arm Force Calculations', new Date(2021, 8, 1),  new Date(utc)],
+        ['MATLAB', 'Project', 'Computation Fluid Dynamics Class', new Date(2022, 8, 1),  new Date(2022, 11, 1)],
         
 
         ['FDM 3D Printing', 'EngineeringSkills', 'Total 3D Printing Experience', new Date(2016, 4, 0),  new Date(utc)],
         ['FDM 3D Printing', 'Project', 'SeaPerch - Kort Nozzles', new Date(2018, 1, 0),  new Date(2019, 4, 20)],
         ['FDM 3D Printing', 'Project', 'Plastic Tuba - Valves', new Date(2019, 2, 12),  new Date(2019, 4, 20)],
         ['FDM 3D Printing', 'Project', 'Practice Marimba - Posts', new Date(2020, 7, 20),  new Date(2020, 7, 28)],
+        ['FDM 3D Printing', 'Project', 'NUROVER', new Date(2019, 10, 4), new Date(utc)],
         // ['FDM 3D Printing', 'Job', 'Nextera Robotics', new Date(2021, 6, 1),  new Date(2021, 8, 24)],
         
         
@@ -49,6 +52,7 @@ function drawChart() {
         ['Tools / Machines', 'EngineeringSkills', 'Soldering Experience', new Date(2018, 2, 0),  new Date(utc)],
         ['Tools / Machines', 'EngineeringSkills', 'Power Tool Experience', new Date(2016, 9, 0),  new Date(utc)],
         ['Tools / Machines', 'EngineeringSkills', 'CNC Mill and Lathe Experience', new Date(2021, 8, 0),  new Date(utc)],
+        ['Tools / Machines', 'Job', 'Working at the Northeastern MIE Machine Shop', new Date(2021, 9, 0),  new Date(utc)],
         
 
         ['FEA', 'EngineeringSkills', 'Total Finite Element Analysis (FEA) Experience', new Date(2019, 3, 0),  new Date(utc)],
