@@ -121,3 +121,7 @@ li {
     height: 50vh;
     overflow: hidden;
 }
+
+.video-bg {
+    z-index: -100;
+}
