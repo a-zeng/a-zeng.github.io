@@ -20,16 +20,8 @@
 
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="js/timeline.js"></script>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TWELD93T7"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'G-6TWELD93T7');
-        </script>
+        <script type="text/javascript" src="js/includeHTML.js"></script>
+        <script type="text/javascript" src="js/lazyVideo.js"></script>
     </head>
     <!-- *********************************** HEAD END *********************************** -->
     
@@ -70,7 +62,7 @@
                 <h1 class="masthead-heading mb-3">ALEX ZENG</h1>
                 <!-- Masthead Subheading-->
                 <p class="pre-wrap masthead-subheading font-weight-light mb-3">Mechanical Engineer | Maker | 3D Printing Enthusiast</p>
-                <a href="/assets/pdf/AZeng_ME_Resume_Latest.pdf" class="btn btn-light mb-5"><i class="fas fa-download" target="_blank"></i> Download Resume</a>
+                <a href="/assets/pdf/AZengResume_Latest.pdf" class="btn btn-light mb-5"><i class="fas fa-download" target="_blank"></i> Download Resume</a>
             </div>
 
         </header>
@@ -94,13 +86,53 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 
+                <!-- Featured Projects! -->
+                <div class="text-center row justify-content-center">
+                    <h3 class="text-secondary col-lg-12 mb-4 d-inline-block">FEATURED PROJECTS</h2>
+                    
+                    <!-- 2022 Rover -->
+                    <div class="col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover22">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Watney MK3 (2022) - Northeastern University Mars Rover Team </p></div>
+                            </div>
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
+                                <source data-src="assets/img/projects/rover/rover2022_ERDM-640x360.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Monolayer Capstone Project -->
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-monolayer">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Capstone Project - Automated Marangoni Monolayer Transfer Technique</p></div>
+                            </div>
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
+                                <source data-src="assets/img/projects/monolayer/transfer-640x360.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
                 <!-- Filtering Buttons -->
                 <div class="filtering-buttons mb-5">
-                    <p class="text-center">Sort by project type:</p>
+                    <h3 class="text-center text-secondary">SORT BY PROJECT TYPE:</p>
                     <div class="container col-lg-8">
                         <div class="btn-group d-flex justify-content-center" role="group" aria-label="View selector">
                             <button onclick="sortAll()" class="btn btn-secondary mx-auto">All</button>
-                            <button onclick="sortCAD()" class="btn btn-info mx-auto">Design & CAD</button>
+                            <button onclick="sortCAD()" class="btn btn-info mx-auto">Design</button>
+                            <button onclick="sortManufacturing()" class="btn btn-dark mx-auto">Manufacturing</button>
                             <button onclick="sortRobotics()" class="btn btn-danger mx-auto">Robotics</button>
                             <button onclick="sortCoding()" class="btn btn-success mx-auto">Coding</button>
                         </div>
@@ -110,31 +142,52 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
-                    
-                    <!-- 2020 Rover -->
-                    <!-- <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover20">
+
+                    <!-- Monolayer Capstone Project -->
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-monolayer">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>Watney Mark 2 (2020) - Northeastern University Mars Rover Team </p></div>
-                            </div><img class="img-fluid" src="assets/img/projects/rover/nurover-pan.gif" alt="Pan Around the Rover"/>
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Capstone Project - Automated Marangoni Monolayer Transfer Technique</p></div>
+                            </div>
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
+                                <source data-src="assets/img/projects/monolayer/transfer-640x360.mp4" type="video/mp4">
+                            </video>
                         </div>
-                    </div> -->
+                    </div>
+
+                    <!-- Viterbi Case -->
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-viterbi">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Machined Case for Split Ergonomic Mechanical Keyboard</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/viterbi/PXL_20220207_204558063.jpg" alt="Image"/>
+                        </div>
+                    </div>
 
                     <!-- 2022 Rover -->
-                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover22">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Watney MK3 (2022) - Northeastern University Mars Rover Team </p></div>
-                            </div><img class="img-fluid" src="assets/img/projects/rover/rover2022_ERDM.gif" alt="Pan Around the Rover"/>
+                            </div>
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
+                                <source data-src="assets/img/projects/rover/rover2022_ERDM-640x360.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
 
                     <!-- 2021 Rover -->
-                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover21">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Watney MK2.1 (2021) - Northeastern University Mars Rover Team </p></div>
-                            </div><img class="img-fluid" src="assets/img/projects/rover/nurover-pan.gif" alt="Pan Around the Rover"/>
+                            </div>
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
+                                <source data-src="assets/img/projects/rover/nurover-pan-640x360.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
 
@@ -144,21 +197,29 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Marble Machine X (MMX) CAD Team</p></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/projects/mmx/mmx-pan.gif" alt="MMX"/>
+                            <!-- <img class="img-fluid" loading="lazy" src="assets/img/projects/mmx/mmx-pan.gif" alt="MMX"/> -->
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm">
+                                <source data-src="assets/img/projects/mmx/mmx-pan-640x360.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                     
                     <!-- SARndbox v2 -->
-                    <div class="sort-all sort-code sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-code sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-sarndbox">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Augmented Reality Sandbox v2.0</p></div>
-                            </div><img class="img-fluid" src="assets/img/projects/sandbox/sarndbox-pan.gif" alt="Augmented Reality Sandbox Picture"/>
+                            </div>
+                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
+                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
+                                <source data-src="assets/img/projects/sandbox/sarndbox-pan-640x360.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
 
                     <!-- Plastic Tuba -->
-                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-tuba">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>High School Senior CAPStone - Plastic Tuba</p></div>
@@ -167,7 +228,7 @@
                     </div>
 
                     <!-- Practice Marimba -->
-                    <div class="sort-all sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-marimba">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Practice Marimba</p></div>
@@ -176,7 +237,7 @@
                     </div>
 
                     <!-- SeaPerch -->
-                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                    <div class="sort-all sort-rob sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-seaperch">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>High School - SeaPerch Robotics</p></div>
@@ -228,182 +289,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">MMX CAD Team</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                            An online collaborative effort of 140+ volunteers to optimize the loading of a 6,000+ part assembly, pushing the limits of Fusion 360 and requiring a massive PDM database to manage.
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Media -->
-                                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/UYFdNwXXcac?start=551" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>The Marble Machine X (MMX) has been crazy musician Martin Molin's dream for the past 4 years, and I've been following along his journey on YouTube since the release of his first Marble Machine back in 2016. These kinetic machines use dropped marbles to strike various instruments and play music. When he announced in June 2020 that he was looking for CAD help from the community, I instantly jumped in and I haven't regretted it one bit.</p>
-
-                                        <a href="assets/img/projects/mmx/marble-paths.png">
-                                        <img class="img-fluid rounded" src="assets/img/projects/mmx/marble-paths.png" alt="CAD Render of the MMX"></a>
-                                        <p><b>A render of the Marble Paths Pre-assembly (the assembly I am team leader of)</b></p>
-
-                                        <p>The MMX is modeled in Fusion 360, originally incorporating every bolt, screw, and nut that would be used in its mechanical construction. This, however, is resource-intensive and taxing for Fusion 360 to run, so the CAD team's main goal has been to defeature the assembly by removing unnecessary parts and simplifying modeled features. This process is intended to lose data on the parts, since the main priority of this first phase is to reduce loading times for the master assembly.</p>
-
-                                        <hr>
-                                        <div id="Drum-Marble-Track">
-                                            <h2 class="mt-3">Drum Marble Track</h2>
-                                            <div>
-                                                <a href="assets/img/projects/mmx/drum-marble-track-gif.gif">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/mmx/drum-marble-track-gif.gif"\ alt="GIF of the Drum Marble Track">
-                                                </a>
-                                                <p><b>A Pan Around the Drum Marble Track</b></p>
-                                            </div>
-                                            <table>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Defeature and simplify the Drum Marble Track</li>
-                                                            <li>Update it to reflect the angles of the current design on the machine</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Design Process: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Design the track by first modelling its form, then adding more intricate features like the 3D sweep</li>
-                                                            <li>Cross-check the design with the track on the machine using recent images of the track and its surroundings</li>
-                                                            <li>Iterate on the design, whether by adding missing features or other features found through part alignment</li>
-                                                            <li>Repeat if there are any changes to the track or machine</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Working around Fusion's poor implementation of 3D sketches and lines</li>
-                                                            <li>Detection of lines for 3D sweeps</li>
-                                                            <li>Aligning parts with other parts</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>3D lines need to be on the same sketch in order for Fusion to detect them as a tangent chain of lines</li>
-                                                            <li>Avoid using 3D sweeps whenever possible</li>
-                                                            <li>Use a master sketch to govern part alignment</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        
-                                        <hr>
-                                        <div id="Demag-Wheel">
-                                            <h2 class="mt-3">Demagnetizing (Demag) Wheel</h2>
-                                            <div>
-                                                <a href="assets/img/projects/mmx/demag-wheel-gif.gif">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/mmx/demag-wheel-gif.gif"\ alt="GIF of the Demag Wheel">
-                                                </a>
-                                                <p><b>A Pan Around the Demagnetization Wheel</b></p>
-                                            </div>
-                                            <table>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Defeature and simplify the Demag Wheel</li>
-                                                            <li>Remove extra magnets in the center</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Design Process: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Work backwards from the original, fully-featured CAD part by determining places of simplification and removal (magnets)</li>
-                                                            <li>Merge sketches of parts on parallel planes</li>
-                                                            <li>Compare to the demag wheel on the machine and add missing features</li>
-                                                            <li>Iterate on the the part as changes are made</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Combining features of all the plates into as few sketches as possible to reduce loading complexity</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>With captured design history, the more features that are present, the larger the file will be and the more time it will take to load</li>
-                                                            <li>Modelling parametrically saves a lot of time later on with inter-part alignment</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        
-                                        <hr>
-                                        <div id="DivBy4">
-                                            <h2 class="mt-3">Divide by 4 Mechanism (DivBy4)</h2>
-                                            <div>
-                                                <a href="assets/img/projects/mmx/divideby4-gif.gif">
-                                                    <img class="img-fluid rounded"src="assets/img/projects/mmx/divideby4-gif.gif"\ alt="GIF of the DivideBy4">
-                                                </a>
-                                                <p><b>A Pan Around the Divide By 4 Mechanism</b></p>
-                                            </div>
-                                            <table>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Defeature and simplify the Divide By 4</li>
-                                                            <li>Update the length to match the current design on the machine</li>
-                                                            <li>Add a felt stop at the flipper</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Design Process: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Determine modifications made on the real-life part compared to the latest CAD model (added length to tubing, added offset to side steel plate for adjustability)</li>
-                                                            <li>Model the part from the ground up since the latest model was too bloated to rework</li>
-                                                            <li>Compare the new CAD to the real-life part, checking for differences and missed out features</li>
-                                                            <li>Iterate as changes are made</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Working parametrically with offset segments of the part and 3D sketches</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Plan your features well in order to reduce time later modifying features to make the part work parametrically</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                                        <div include-html="html/modal-mmx.html"></div>
 
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -423,90 +309,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Augmented Reality Sandbox v2.0(SARndbox)</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                            A sandbox that uses a projector, Xbox 360 Kinect, and powerful computer to project an augmented reality topographic map on the sand's surface.
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-inbox"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Media -->
-                                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/W48GtjyrMsw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>
-                                            The Augmented Reality Sandbox (SARndbox) is a project originally created by a team of motivated students at my high school, which was showcased at the LearnLaunch Conference at Harvard in 2016. Since then, it was sitting unused and the Director of Strategic Innovation wanted to bring it back to life with modification that would allow frequent usage during school hours.
-                                        </p>
-
-                                        <table class="mb-4">
-                                            <tr>
-                                                <td class="align-top float-right"><b>Objectives: </b></th>
-                                                <td class="w-75">
-                                                    <ul>
-                                                        <li>Convert the SARndbox from movable to stationary</li>
-                                                        <li>Make the frame more rigid by reinforcing it and reducing Kinect holder sag</li>
-                                                        <li>Replacing the original projector with a different projector</li>
-                                                        <li>Update the software and ensure it still works</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-top float-right"><b>Challenges: </b></th>
-                                                <td class="w-75">
-                                                    <ul>
-                                                        <li>Using Linux command line interface (CLI) to install programs</li>
-                                                        <li>Calibrating the Kinect sensor to read the topographic surface of the sand</li>
-                                                        <li>Accurately positioning the new projector</li>
-                                                        <li>Minimizing cost by using only parts available in the makerspace</li>
-                                                        <li>Creating an accurate <a href="https://a360.co/2JMgRoj" target="_blank">CAD model of the sandbox</a> </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-top float-right"><b>Results: </b></th>
-                                                <td class="w-75">
-                                                    <ul>
-                                                        <li>Director of Strategic Innovation is still showcasing the SARndbox today</li>
-                                                        <li>SARndbox is still operational today</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-top float-right">
-                                                    <b>Takeaways: </b>
-                                                </th>
-                                                <td class="w-75">
-                                                    <ul>
-                                                        <li>Linux is extremely versatile and powerful, specifically with integrating many components together with software</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <div>
-                                            <a href="assets/img/projects/sandbox/sarndbox-studio-gif.gif">
-                                                <img class="img-fluid rounded" src="assets/img/projects/sandbox/sarndbox-studio-gif.gif"\ alt="SARndbox Full View, Orthographic">
-                                            </a>
-                                            <p><b>CAD Model of the SARndbox in an HDRI Studio Environment. Fusion 360 model can be found <a href="https://a360.co/2JMgRoj">here</a>. </b></p>
-                                        </div>
-
-                                        <a href="assets/img/projects/sandbox/sarndbox-ortho.jpg">
-                                            <img class="rounded" style="width: 32%; padding: 0.5% 0.5%" src="assets/img/projects/sandbox/sarndbox-ortho.jpg"\ alt="SARndbox Full View, Orthographic">
-                                        </a>
-                                        <a href="assets/img/projects/sandbox/sarndbox.jpg">
-                                            <img class="rounded" style="width: 32%; padding: 0.5% 0.5%" src="assets/img/projects/sandbox/sarndbox.jpg"\ alt="SARndbox Topographic Projection View">
-                                        </a>
-                                        <a href="assets/img/projects/sandbox/sarndbox-topo.jpg">
-                                            <img class="rounded" style="width: 32%; padding: 0.5% 0.5%" src="assets/img/projects/sandbox/sarndbox-topo.jpg"\ alt="SARndbox Topographic Projection View">
-                                        </a>
-                                        <p><b>Images of the Augmented Reality Sandbox. Leftmost is a full view of the sandbox, middle is a closer view of the sand and topographic projection, and rightmost is the software running on the computer.</b></p>
-
+                                        <div include-html="html/modal-sandbox.html"></div>
 
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -517,109 +320,6 @@
                 </div>
             </div>
             
-            <!-- 2020 Rover -->
-            <div class="portfolio-modal modal fade" id="pm-rover20" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">NUROVER</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A Mars rover made by 33 Northeastern students for competition in the University Rover Challenge (URC)
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-
-                                        <!-- Portfolio Modal - Image-->
-                                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/G44AWOTWqOM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a>
-                                            Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
-                                        
-                                        <hr>
-                                        <div id="2019-2020-Rover-Season">
-                                            <h2 class="mt-3">2019-2020 Season - Watney MK2</h2>
-                                        
-                                            <p>I joined NUROVER in the 2020 season as part of the mobility team. This year, the mobility system was comprised of a 6-wheel drive rocker-bogie system. The rocker-bogie system is connected via a bar differential, which ensures that the rover can maintain at least 3 wheels on the ground even when traversing large obstacles. Compared to the previous year, the bar differential is a massive improvement since our implementation of a gear differential had significant backlash issues, rendering the rocker-bogie system significantly less effective. Each wheel is individually powered by a high-torque motor, allowing our rover to scale hilly terrain and slopes of over 45 degrees.</p>     
-                                            
-                                            <table>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Mobility Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Implement a new carbon fiber bar differential system instead of gear differential</li>
-                                                            <li>Outsource the manufacture of the rocker-bogie arches to reduce warping when bending the steel pipes</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Understanding the forces that act on a bar differential, especially in 3D</li>
-                                                            <li>Cutting carbon fiber rods</li>
-                                                            <li>Getting quotes on bending steel pipes into arches</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>One of 36 teams accepted to compete in Utah (despite having in-person competition cancelled due to COVID19)</li>
-                                                            <li>84/100 score on the Systems Acceptance Review (SAR)</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Even a little bit of backlash or slop in a rocker-bogie system hinders it immensely</li>
-                                                            <li>The bar differential worked better than the gear differential</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <div class="pic">
-                                                <a href="assets/img/projects/rover/differential-comparison.png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/rover/differential-comparison.png"\ alt="Comparison between bar and gear differentials">
-                                                </a>
-                                                <p><b>Comparison between the new bar differential and old gear differential</b></p>
-                                            </div>
-                                            
-                                            <div class="pic">
-                                                <a href="assets/img/projects/rover/rover-2020.png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/rover/rover-2020.png"\ alt="Picture of the 2020 Rover">
-                                                </a>
-                                                <p><b>Picture of the 2020 Mobility System CAD</b></p>
-                                            </div>
-                                        </div>
-                                                                               
-                                        
-                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- 2021 Rover -->
             <div class="portfolio-modal modal fade" id="pm-rover21" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl" role="document">
@@ -629,104 +329,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Watney MK2.1</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A Mars rover made by Northeastern students for competition in the University Rover Challenge (URC)
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a>
-                                        Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
-                                        
-                                        <hr>
-                                        
-                                        <div id="2020-2021-Rover-Season">
-                                            <h2 class="mt-3">2020-2021 Season - 3D Printed Wheels</h2>
-                                        
-                                            <p>As one of the mobility team leads for the 2021 competition year, my task was to oversee the design and manufacture of the frame of the rover, consisting of both the chassis and the mobility system. However, due to restrictions from COVID-19, the mobility team had limited to no access to university manufacturing or work spaces. Thus, our plans shifted to focus on testing the rover whenever possible and projects that do not require lab space, for example, fabricating 3D printed wheels.</p>
-
-                                            <!-- Portfolio Modal - Image-->
-                                            <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/iy6D_sH8bxg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
-
-                                            <table>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Mobility Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Design 3D printable wheels that would be more rigid and cost effective than off-the-shelf (OTS) wheels</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Determining an optimal tread pattern for the wheel</li>
-                                                            <li>Getting access to university 3D printers (that were large enough) to print the wheels</li>
-                                                            <li>Simulating forces on the wheel using SolidWorks FEA</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Successfully printed and implemented 3D printed wheels on the rover</li>
-                                                            <li>One of 36 teams accepted to compete in the remote competition</li>
-                                                            <li>89.1/100 score on the Systems Acceptance Review (SAR)</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Routine testing is very important, and a "fail fast" design philosophy might be good for next year</li>
-                                                            <li>"Integration hell" is a real thing</li>
-                                                            <li>3D printed wheels might be more work than necessary, especially with evaluating tread pattern efficacy</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <div class="pic">
-                                                <a href="assets/img/projects/rover/2021rover-during-competition.jpg">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/rover/2021rover-during-competition.jpg" alt="FEA of Wheel">
-                                                </a>
-                                                <p><b>Rover competing at competition remotely, with 3D printed wheels shown in the bottom left</b></p>
-                                            </div>
-
-                                            <h3>2021 Wheel Showcase</h3>
-
-                                            <div class="gif">
-                                                <a href="assets/img/projects/rover/rover-wheel.gif" target="_blank">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/rover/rover-wheel.gif"\ alt="GIF of 3D Printed Wheels">
-                                                </a>
-                                                <p><b>Rendered Pan Around the 3D Printed Wheel</b></p>
-                                            </div>
-                                            
-                                            <p>These 3D printed wheels are printed from 95A hardness TPU, which when combined with the honeycomb interior pattern, allow the wheel to be compliant, lightweight, and air-less. After much research into the tread pattern and creating multiple tread prototypes, we opted to go for a design similar to NASA's Curiosity rover. Additionally, using SolidWorks FEA, the maximum Von Mises stress that the wheel endures is less than 0.3 MPA, which is far below the 12 MPA tensile yield strength of the material.</p>
-                                                
-                                            <div class="pic">
-                                                <a href="assets/img/projects/rover/rover-wheel-fea.png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/rover/rover-wheel-fea.png" alt="FEA of Wheel">
-                                                </a>
-                                                <p><b>FEA of the Wheel, Assuming 41 N Distributed Load</b></p>
-                                            </div>
-                                            
-
-                                        </div>
-                                        
+                                        <div include-html="html/modal-rover21.html"></div>
                                         
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                         
@@ -747,93 +350,9 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Watney MK3</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A Mars rover made by Northeastern students for competition in the University Rover Challenge (URC)
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a>
-                                        Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p>
-                                        
-                                        <!-- Portfolio Modal - Video-->
-                                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                            <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/TF8PM8pujRI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-
-                                        <hr>
-                                        <div id="2019-2020-Rover-Season">
-                                            <h2 class="mt-3">2021-2022 Season - Watney MK3</h2>
-
-                                            <p>Taking on a role as the arm lead for this year (as well as co-leading the mechanical team), my goal was ambitious: spearhead the development of a <b>custom robotic arm</b> within a <b>8 month period</b> capable of <b>moving dextrously around its workspace (on top of the rover!) and manipulating heavy objects.</b> </p>
-                                            
-                                            <!-- Portfolio Modal - Video-->
-                                            <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/QOwbsyQ-Zk8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
-                                            
-                                            <table>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Arm Goals: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Has 6 degrees of freedom (DoF), excluding a gripper</li>
-                                                            <li>Capable of lifting 5kg at 1m away from the arm's base</li>
-                                                            <li>Has closed-feedback sensing on each joint</li>
-                                                            <li>Weigh less than 10kg</li>
-                                                            <li>Cost less than $4000</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Training new members while also leading the development effort of the arm</li>
-                                                            <li>Designing an arm capable of fulfilling requirements when industrial robotic arms of the same capabilities cost significantly more</li>
-                                                            <li>Determining anticipated loads per joint of the arm</li>
-                                                            <li>Procuring parts for the arm from the most optimal vendors</li>
-                                                            <li>Estimating cost and weight of the arm prior to assembly</li>
-                                                            <li>Creating a custom arm control solution that is more intuitive for users</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>6 DoF arm with joint sensing</li>
-                                                            <li>Cost $3,406.92</li>
-                                                            <li>Weighs ~9kg</li>
-                                                            <li>Can lift 6kg at 1m and manipulate objects</li>
-                                                            <li>Controllable via</li>
-                                                            <li>16th place of 36 teams during competition as a team that has never gone to Utah</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Lessons Learned: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Even a little bit of backlash or slop in a rocker-bogie system hinders it immensely</li>
-                                                            <li>The bar differential worked better than the gear differential</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        
+                                        <div include-html="html/modal-rover22.html"></div>
                                         
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -851,109 +370,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Plastic Tuba</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A cheap, 1-valved tuba created using PVC pipes and 3D printing to explore the feasibility of additive manufacturing in making musical instruments more accessible.
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-music"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>
-                                            <a href="https://drive.google.com/drive/u/1/folders/1tSS5Vu7-gCs7yOi0meZwc2ECzjZIoYtD" target="_blank">Click here to see an archive of some of my CAPStone work</a>
-                                        </p>
-
-                                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                            <iframe class="embed-responsive-item rounded" src="https://drive.google.com/file/d/1HQ7jce5pRbTc-WozBKR2Fucg1-N0_JnN/preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                        <p>
-                                            After growing discontent with using the old, weathered tuba lent from my high school, I began to ponder about tubas and their accessibility. The cheap beginner tubas can cost over $1500, so it's not feasible to ask a new tuba player to  purchase an instrument that they will outgrow should they choose to continue playing. It would be amazing to have a cheap, beginner tuba...
-                                        </p>
-                                        <p>
-                                            That's when I thought of combining 3D printing, a technology just entering the consumer space at the time that I was interested in, with other accessible parts to construct a tuba that would be cheap enough for a beginner player to use until they decide whether tuba is for them.
-                                        </p>
-                                        <div>
-                                            <a href="assets/img/projects/tuba/IMG_20190520_223342_951.jpg">
-                                                <img class="img-fluid rounded" src="assets/img/projects/tuba/IMG_20190520_223342_951.jpg"\ alt="Image of me with the tuba on my shoulder">
-                                            </a>
-                                            <p><b>Image of me playing the tuba</b></p>
-                                        </div>
-                                        <div id="tuba">
-                                            <table class="mb-4">
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Prototype a cost-effective beginner tuba using accessible means and parts</li>
-                                                            <li>Explore new technologies like consumer 3D printing and how they can be applied to increase musical instrument accessibility</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Maximizing 3D print quality from school printers</li>
-                                                            <li>Reducing air leakage from 3D printed valves</li>
-                                                            <li>Creating a tuba body using cheap, off-the-shelf parts</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Constructed the tuba body using PVC pipes and connectors</li>
-                                                            <li>Designed custom, 3D printable rotary valves that can function as brass instrument valves despite being leaky</li>
-                                                            <li>The tuba can be played!</li>
-                                                            
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right">
-                                                        <b>Takeaways: </b>
-                                                    </th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Consumer 3D printers are currently unable to manufacture brass instrument valves to the tight tolerances they require, but I am hopeful that they may as the technology matures</li>
-                                                            <li>Additive manufacturing offers unique methods of fabrication that will allow it to become more widespread in industrial and consumer settings</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div>
-                                            <embed src="assets/pdf/CAPStone%20AM%20Instrument%20Poster.pdf" style="width: 100%; height: 90vh"></embed>
-                                            <p><b>CAPStone Showcase Poster</b></p>
-                                        </div>
-                                        <div class="pic">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <a href="assets/img/projects/tuba/tuba.jpg">
-                                                            <img class="img-fluid rounded" src="assets/img/projects/tuba/tuba-large.jpg"\ alt="Image of the tuba">
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <a href="assets/img/projects/tuba/valve.jpg">
-                                                            <img class="img-fluid rounded" src="assets/img/projects/tuba/valve-large.jpg"\ alt="Image of the valve">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p><b>Images of the tuba without valves (left) and the the valve (right)</b></p>
-                                        </div>
-                                        <div>
-                                            <embed src="assets/pdf/Research%20Paper%20-%20Viability%20of%20Additive%20Manufacturing%20in%20Musical%20Instruments.pdf" style="width: 100%; height: 90vh"></embed>
-                                            <p><b>CAPStone Research Paper - Viability of Additive Manufacturing in Brass Instruments</b></p>
-                                        </div>
+                                        <div include-html="html/modal-tuba.html"></div>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
                                 </div>
@@ -972,82 +389,8 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Practice Marimba</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A 4.3 octave practice marimba that breathes life back into second-hand synthetic bars, combining woodworking and 3D printing.
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>
-                                            I've always wanted to build my own marimba from raw materials since it would be cheaper than purchasing a new instrument. However, I have limited access to tools at my house, so while such an idea is not impossible, it is costly once tool purchasing costs are considered. One day, while browsing a used percussion equipment group, I found a listing for used marimba bars for $800. For context, the cheapest 4.3 octave marimba costs around $2500, with most of the cost coming from the skilled labor required for accurate tuning of marimba bars. I thought this was a great deal and perfect way to get a practice instrument, so I bought the bars and started working.
-                                        </p>
-                                        <!-- Portfolio Modal - Image-->
-                                        <div>
-                                            <a href="assets/img/projects/marimba/marimba-finished.jpg">
-                                                <img class="img-fluid rounded" src="assets/img/projects/marimba/marimba-finished.jpg"\ alt="Image of the practice marimba">
-                                            </a>
-                                            <p><b>Image of the practice marimba</b></p>
-                                        </div>
-                                        <div id="marimba">
-                                            <table class="mb-4">
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Construct a wooden frame to hold marimba bars</li>
-                                                            <li>Design 3D printable posts to hold the paracord that the bars rest on</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Determining the geometry of the through holes of the bars, and using it to angle each frame crossbeam</li>
-                                                            <li>Drilling holes straight down without a drill press for the posts</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Created a playable practice marimba</li>
-                                                            <li>Saved several thousand dollars compared to purchasing a new marimba </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right">
-                                                        <b>Takeaways: </b>
-                                                    </th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>3D printing can not only be used for fabricating parts, but also jigs to do work more easily and efficiently</li>
-                                                            <li>Hand tools and power tools can do things that the other can not</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div>
-                                            <a href="assets/img/projects/marimba/marimba-render.png">
-                                                <img class="img-fluid rounded" src="assets/img/projects/marimba/marimba-render.png"\ alt="Render of the practice marimba">
-                                            </a>
-                                            <p><b>3D render of the practice marimba, modeled in Fusion 360</b></p>
-                                        </div>
-                                        <div>
-                                            <a href="assets/img/projects/marimba/marimba-posts.png">
-                                                <img class="img-fluid col-lg-4 col-6 rounded" src="assets/img/projects/marimba/marimba-posts.png"\ alt="Image of the marimba bar posts">
-                                            </a>
-                                            <p><b>Image of the marimba bar posts</b></p>
-                                        </div>
+                                        <div include-html="html/modal-marimba.html"></div>
+
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
                                 </div>
@@ -1066,196 +409,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                      <!-- Portfolio Modal - Title-->
-                                      <h2 class="portfolio-modal-title text-secondary mb-3">SeaPerch</h2>
-                                      <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                           An underwater remotely-operated vehicle (ROV) designed with a limited budget to participate in the International SeaPerch Challenge.
-                                      </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-water"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        
-                                        <!-- Portfolio Modal - Image--><a href="assets/img/projects/seaperch/rov-underwater.jpg">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/projects/seaperch/rov-underwater.jpg" alt="ROV Submerged Underwater"/></a>
-                                        
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>SeaPerch is an underwater robotics competition that uses a budget-friendly remotely-operated vehicle (ROV) to traverse an obstacle course and complete pre-designated tasks, from lifting whiffle balls to opening hatches. The ROV is made using the base kit, which contains their default ROV, alongside $20 for off-the-shelf parts. </p>
-
-                                        <hr>
-                                        <div id="Seaperch-2018">
-                                            <h2 class="mt-3">2018 Season - Hammerhead</h2>
-                                            
-                                            <div id="SeaPerch-2018-Table">
-                                                <table class="mb-4">
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Objectives: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Maximize the thrust out of the vertical lift motor</li>
-                                                                <li>Maximize the ROV's speed</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Design Choices: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Place the vertical lift motor in front of the rover to maximize the moment arm when manipulating objects</li>
-                                                                <li>Use a T-shaped design (similar to a hammerhead shark) to increase hydrodynamics of the ROV</li>
-                                                                <li>Use ducted propellors (Kort nozzles) on the back thrust motors to increase motor efficiency and provide more thrust</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Challenges: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Designing effective ducted propellors</li>
-                                                                <li>Attaching the right amount of floats and distributing them evenly enough to achieve neutral buoyancy</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Results: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Placed 3rd internationally for engineering notebook and notebook presentation at the 2018 International SeaPerch Challenge</li>
-                                                                <li>Designed cost-effective 3D printed Kort nozzles ($0.62, assuming 49.07 grams of filament at $25 / kg)</li>
-                                                                <li>Achieved a faster ROV than most of the competitors</li>
-                                                                <li>
-                                                                    <a href="https://www.andovertownsman.com/news/education/ahs-students-participate-in-international-underwater-robot-competition/article_a205a124-8bb7-5527-a15f-b84bda76f6f3.html">Featured in a local newspaper</a> 
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right">
-                                                            <b>Takeaways: </b>
-                                                        </th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>ROV frame weight primarily governs its speed, so it must be lighter to maximize speed</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            
-                                            <div class="pic">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <a href="assets/img/projects/seaperch/hammerhead-cad.png">
-                                                                <img class="img-fluid rounded" src="assets/img/projects/seaperch/hammerhead-cad.png" target="_blank" alt="CAD of the Hammerhead">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <a href="assets/img/projects/seaperch/hammerhead-underwater.png">
-                                                                <img class="img-fluid rounded" src="assets/img/projects/seaperch/hammerhead-underwater.png" target="_blank" alt="Image of the Hammerhead">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p><b>Images of the Hammerhead CAD (left) and the actual Hammerhead ROV (right)</b></p>
-                                            </div>
-                                            
-                                            <div class="pdf">
-                                                <embed src="assets/pdf/HS_AndoverHighSchool_Sharks.pdf" style="width: 100%; height: 90vh"></embed>
-                                                <p><b>2018 Award Winning Engineering Notebook</b></p>
-                                            </div>
-                                        </div>
-                                        
-                                        <hr>
-                                        <div id="Seaperch-2019">
-                                            <h2 class="mt-3">2019 Season - Jaws</h2>
-                                        
-                                            <div id="SeaPerch-2019-Table">
-                                                <table class="mb-4">
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Objectives: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Design a lighter, more hydrodynamic, and slimmer ROV frame than the previous year</li>
-                                                                <li>Further develop CAD skills through more accurate modelling and learning fluid simulations</li>
-                                                                <li>Trigger a beacon (Hall effect sensor) using magnets in some enclosure</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Design Choices: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Use a flat design that minimizes front surface area</li>
-                                                                <li>Preserve the Kort nozzles</li>
-                                                                <li>Create many holes and slots in the beacon triggerer to make it more maneuverable through water</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Challenges: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Learning how to use fluid simulations and interpret them</li>
-                                                                <li>Attaching the right amount of floats and distributing them evenly enough to achieve neutral buoyancy</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right"><b>Results: </b></th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Selected to present our ROV in an additional engineering presentation due to our stellar engineering notebook</li>
-                                                                <li>Placed 9th overall in the high school division of the 2019 International SeaPerch Challenge</li>
-                                                                <li>Used Autodesk Flow to reduce the coefficient of drag from 0.92 to 0.72 by adding two motor caps, making the ROV more hydrodynamic (full documentation in the engineering notebook below)</li>
-                                                                <li>Designed an effective beacon triggerer that was easy to manuever and manipulate</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-top float-right">
-                                                            <b>Takeaways: </b>
-                                                        </th>
-                                                        <td class="w-75">
-                                                            <ul>
-                                                                <li>Fluid simulations are an extremely important tool that can help engineers optimize designs</li>
-                                                                <li>Engineering notebooks are our strong suit</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        
-                                            <div class="pic">
-                                                <a href="assets/img/projects/seaperch/seaperch_render.png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/seaperch/seaperch_render.png"\ alt="CAD of 2020 ROV">
-                                                </a>
-                                                <p><b>CAD of our 2020 ROV, Jaws</b></p>
-                                            </div>
-                                        
-                                            <div class="pic">
-                                                <a href="assets/img/projects/seaperch/beacon-triggerer.png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/seaperch/beacon-triggerer.png" alt="Picture of the Beacon Triggerer" width="350px">
-                                                </a>
-                                                <p><b>Picture of the Final Beacon "Triggerer" Design</b></p>
-                                            </div>
-                                        
-                                            <div class="pic">
-                                                <a href="assets/img/projects/seaperch/fluid-simulation.png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/seaperch/fluid-simulation.png"\ alt="Autodesk Flow Fluid Tunnel Simulation">
-                                                </a>
-                                                <p><b>Fluid Tunnel Simulation for Drag Coefficient Determination</b></p>
-                                            </div>
-                                        
-                                            <div class="pdf">
-                                                <embed src="assets/pdf/Final%20Engineering%20Notebook%20Sharks%202019.pdf" style="width: 100%; height: 90vh"></embed>
-                                                <p><b>2019 Engineering Notebook</b></p>
-                                            </div>
-                                        </div>
-                                        
-                                        
+                                        <div include-html="html/modal-seaperch.html"></div>
                                         
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -1275,115 +429,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">DOSS</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             A volunteer website redesign for the UMass Lowell's Toxic Use Reduction Institute's (TURI) Database of Safer Solvents (DOSS) 
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-
-                                        <p>The Database of Safer Solvents (DOSS)</p>
-
-                                        <div id="doss-table">
-                                            <table class="mb-4">
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Modernize the site</li>
-                                                            <li>Update the database and site formatting to be easily viewable on mobile</li>
-                                                            <li>Adjust page headers and footers to be consistent across all pages</li>
-                                                            <li>Streamline UX</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Learning PHP and hosting a Apache server for testing</li>
-                                                            <li>Debugging Bootstrap container positioning</li>
-                                                            <li>Incorporating feedback from TURI in a timely manner</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li> <a href="http://doss.turi.org/index.php">DOSS website</a> is easily viewable on mobile without weird sizing</li>
-                                                            <li>Organized file directory that makes links nicer</li>
-                                                            <li>Headers and footers can be easily edited from one file and update to all web pages</li>
-                                                            <li>Database looks less-cluttered and loads faster</li>
-                                                            <li>TURI is satisfied with the work</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right">
-                                                        <b>Takeaways: </b>
-                                                    </th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Learned PHP and how to better use web dev tools in Chrome</li>
-                                                            <li>Real-world server hosting is extremely complex due to compatibility issues and other unexpected pitfalls</li>
-                                                            <li>Web design is fun, although often things don't work as expected</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        
-                                        <hr>
-                                        <h2>Before: </h2>
-                                        <div>
-                                            <div>
-                                                <a href="assets/img/projects/doss/doss_old_(1080).png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/doss/doss_old_(1080).png"\ alt="Landing page">
-                                                </a>
-                                                <p><b>Original DOSS landing page</b></p>
-                                            </div>
-                                            <div>
-                                                <a href="assets/img/projects/doss/doss_old_GetStarted_Database_Database.php(1080).png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/doss/doss_old_GetStarted_Database_Database.php(1080).png"\ alt="Landing page">
-                                                </a>
-                                                <p><b>Original DOSS database page on laptop (note the header size)</b></p>
-                                            </div>
-                                            <div>
-                                                <a href="assets/img/projects/doss/doss_old_GetStarted_Database_Database.php (1).png">
-                                                    <img class="img-fluid rounded" width="50%" src="assets/img/projects/doss/doss_old_GetStarted_Database_Database.php (1).png"\ alt="Landing page">
-                                                </a>
-                                                <p><b>Original DOSS database page on mobile (note that all database entries load at once)</b></p>
-                                            </div>
-                                        </div>
-
-                                        <hr>
-                                        <h2>After: </h2>
-                                        <div>
-                                            <div>
-                                                <a href="assets/img/projects/doss/doss_new_org_index.php(1080).png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/doss/doss_new_org_index.php(1080).png"\ alt="Landing page">
-                                                </a>
-                                                <p><b>New DOSS landing page</b></p>
-                                            </div>
-                                            <div>
-                                                <a href="assets/img/projects/doss/doss_new_org_index.php(1080).png">
-                                                    <img class="img-fluid rounded" src="assets/img/projects/doss/doss_new_org_index.php(1080).png"\ alt="Landing page">
-                                                </a>
-                                                <p><b>Original DOSS database page on laptop</b></p>
-                                            </div>
-                                            <div>
-                                                <a href="assets/img/projects/doss/doss_new_org_database.php.png">
-                                                    <img class="img-fluid rounded" width="50%" src="assets/img/projects/doss/doss_new_org_database.php.png"\ alt="Landing page">
-                                                </a>
-                                                <p><b>New DOSS database page on mobile</b></p>
-                                            </div>
-                                        </div>
+                                        <div include-html="html/modal-doss.html"></div>
                                         
 
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -1404,66 +450,47 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Portfolio</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                            A static website page for my portfolio, hosted on <a href="https://github.com/a-zeng/a-zeng.github.io">GitHub</a> using GitHub Pages
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Text-->
+                                        <div include-html="html/modal-portfolio.html"></div>
+                                        
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                                        <!-- Portfolio Modal - Image-->
-                                        <div>
-                                            <p><b>Image placeholder</b></p>
-                                        </div>
-                                        <div id="category-table">
-                                            <table class="mb-4">
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Create a nice-looking, lightweight, and professional static portfolio website </li>
-                                                            <li>Learn more about web design by learning new toolkits and APIs like Bootstrap</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Aligning containers and divs using HTML and Bootstrap</li>
-                                                            <li>Applying new APIs to the website</li>
-                                                            <li>Determining how to design the website so it does not break when updating projects</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Modern static site that loads surprisingly fast despite graphics</li>
-                                                            <li>Skill timeline that is easy to program and update</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right">
-                                                        <b>Takeaways: </b>
-                                                    </th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>Website builders aren't necessary to make appealing static sites, such as portfolios</li>
-                                                            <li>Much can be learned from doing it yourself</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
+            <!-- Monolayer  -->
+            <div class="portfolio-modal modal fade" id="pm-monolayer" tabindex="-1" role="dialog" aria-labelledby="#pm-monolayer" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <div include-html="html/modal-monolayer.html"></div>
+                                        
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viterbi -->
+            <div class="portfolio-modal modal fade" id="pm-viterbi" tabindex="-1" role="dialog" aria-labelledby="#pm-viterbi" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <div include-html="html/modal-viterbi.html"></div>
                                         
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -1483,70 +510,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary mb-3">Project Name</h2>
-                                        <h4 class="portfolio-modal-subtitle text-secondary mb-0">
-                                             Project description
-                                        </h4>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Text-->
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at pretium turpis. Aenean ut vulputate odio. Sed convallis justo arcu, et rutrum mauris commodo non. Sed commodo suscipit enim, at suscipit ex elementum quis. Pellentesque eget nunc congue, auctor felis ut, commodo lacus. Nulla non placerat erat. Nullam feugiat magna non velit pretium, ac varius justo porta. Vestibulum venenatis facilisis ipsum, quis vulputate tortor sodales molestie. Morbi non cursus massa, eget fringilla lectus. Mauris faucibus sem ligula, nec dictum lectus vehicula a. Donec id viverra nunc. Phasellus vulputate purus eu interdum viverra. Nullam rutrum dignissim lectus, ultricies aliquam libero fringilla imperdiet. Mauris sit amet nunc a ipsum pharetra tristique. Vestibulum libero velit, tempus quis magna ut, mattis ultrices augue.
-                                        </p>
-                                        <!-- Portfolio Modal - Image-->
-                                        <div>
-                                            <a href="assets/img/projects/">
-                                                <img class="img-fluid rounded" src="assets/img/projects/"\ alt="Image">
-                                            </a>
-                                            <p><b>Image placeholder</b></p>
-                                        </div>
-                                        <div id="category-table">
-                                            <table class="mb-4">
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Objectives: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>List item 1</li>
-                                                            <li>List item 2</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Challenges: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>List item 1</li>
-                                                            <li>List item 2</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right"><b>Results: </b></th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>List item 1</li>
-                                                            <li>List item 2</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="align-top float-right">
-                                                        <b>Takeaways: </b>
-                                                    </th>
-                                                    <td class="w-75">
-                                                        <ul>
-                                                            <li>List item 1</li>
-                                                            <li>List item 2</li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                                        <div include-html="html/modal-placeholder.html"></div>
                                         
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                     </div>
@@ -1577,9 +541,9 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="justify-content-center my-auto p-3 col-md-12 col-lg-9">
-                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a third-year mechanical engineering student at Northeastern University who's looking to graduate in December 2023 with a bachelor's degree in mechanical engineering.</p>
+                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a fourth-year mechanical engineering student at Northeastern University who's looking to graduate in May 2023 with a bachelor's degree in mechanical engineering and potentially pursue a master's in robotics or mechanical engineering.</p>
 
-                        <p class="pre-wrap lead">Realizing design concepts that have been ruminating in your head and watching them work EXACTLY as expected or even benefitting others is a feeling like no other. Reaching that end goal is what inspires me to hone my skills as a mechanical engineer and keep tackling new challenges.</p>
+                        <p class="pre-wrap lead">Realizing designs and concepts that have been ruminating in your head is a feeling like no other. Watching them work EXACTLY as expected, and seeing them benefits others--- that's what I live for. Reaching that end goal is what inspires me to hone my skills as an engineer and keep tackling new challenges.</p>
 
                         <p class="pre-wrap lead">When I'm not doing homework or studying, I enjoy printing anything I can fathom with my 3D printer, tinkering with things (and consequently making a mess that I enjoy cleaning up), playing music on my tuba or DIY practice marimba, and losing track of time playing my favorite video games.</p>
                     </div>
@@ -1748,14 +712,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         
         <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
+        <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script> -->
         
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
         <!-- Sorting Buttons-->
-        <script src="js/sort-buttons.js"></script>  
+        <script src="js/sort-buttons.js"></script>
+
+        <!-- Include HTML -->
+        <script> includeHTML(); </script>
+        
     </body>
     <!-- *********************************** BODY END *********************************** -->
 </html>
