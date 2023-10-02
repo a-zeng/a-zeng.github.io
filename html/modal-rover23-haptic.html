@@ -1,0 +1,85 @@
+<!-- Portfolio Modal - Title-->
+<h2 class="portfolio-modal-title text-secondary mb-3">Imitative Haptic Controller</h2>
+<h4 class="portfolio-modal-subtitle text-secondary mb-0">
+    A scaled-down, arm-shaped controller to improve teleoperation of a Mars Rover's arm using intuitive and imitative control
+</h4>
+<!-- Icon Divider-->
+<div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
+    <div class="divider-custom-line"></div>
+</div>
+
+<!-- Portfolio Modal - Text-->
+<!-- <p>The Northeastern Mars Rover Team (NUROVER) was founded in September 2018, originally with the intention of competing in the following year's Mars Society University Rover Challenge (URC). The challenge requires the rover to partake in tasks emulating Mars' desert-like terrain, such as manipulating tools, interacting with objects, and autonomously navigating rocky terrain, all under a $18,000 budget and 50kg weight limit. More information can be found at the Mars Society's website <a href="http://urc.marssociety.org/" target="_blank">here.</a>
+Our website can be found <a href="https://www.northeasternrover.com/" target="_blank">here.</a> </p> -->
+
+<!-- Portfolio Modal - Video-->
+<!-- <div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/TF8PM8pujRI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+<div class="story bg-light">
+    <hr>
+    <h2>Background</h2>
+
+    <p>In 2021, Northeastern’s Professor John “Peter” Whitney gave the Mars Rover Team a tour of his lab and displayed some of his research on low-latency, robotic teleoperation. Seeing an application of his research to our rover, we designed a prototype alternate control method for our robotic arm (see on the right). This controller allows the operator to “puppet” the rover arm, where the arm follows the movements made to the controller by the operator. To our shock, this prototype demonstrated that the control method works really well. However, after more testing, we noted several key issues with the prototype:</p>
+
+    <table>
+        <tr>
+            <td class="align-top float-right"><b>Key Issues: </b></th>
+            <td class="w-75">
+                <ul>
+                    <li>Individual joints could not hold or lock their position</li>
+                    <li>Flimsy 3D printed frame was not stiff enough</li>
+                    <li>Tangled wiring made storage and setup difficult</li>
+                    <li>Lack of upgradeability and modularity limited future development</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <a href="assets/img/projects/rover/model_arm_old.png">
+            <img class="img-fluid rounded w-75" src="assets/img/projects/rover/model_arm_old.png"\ alt="Old Non-haptic Controller">
+        </a>
+        <p><b>Old Non-haptic Controller</b></p>
+    </div>
+
+    <hr>
+</div>
+
+<!-- Portfolio Modal - Video-->
+<!-- <div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/m81xB7FqriI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> -->
+
+<h2>Design Process</h2>
+<div>
+    <p>In an effort to correct these issues, our team improved the controller by iterating on the previous version’s successes. To create this improved controller, we went through two design cycles: one prototype and one final product.</p>
+
+    <div>
+        <a href="assets/img/projects/rover/model_arm_prototype.png">
+            <img class="img-fluid rounded w-75" src="assets/img/projects/rover/model_arm_prototype.png"\ alt="Prototype CAD of Haptic Controller">
+        </a>
+        <p><b>Prototype CAD of Haptic Controller</b></p>
+    </div>
+
+    <p>For the initial prototype, I designed the ⅓-scale arm controller to use smart BLDC servo motors with integrated encoders on the first 4 joints. These servo motors would read joint their encoder angles and then relay them to the rover arm as target positions. Additionally, by using BLDC motors, we can integrate haptic feedback into the arm. If the rover arm hits an object, we can notify the operator by locking the joints of the controller to prevent them from colliding more. To ensure each motor had enough torque to lock the arm, I used MATLAB to calculate the required torques for each joint in the worst loading situation (arm full extended outwards).</p>
+
+    <div>
+        <a href="assets/img/projects/rover/model_arm_matlab.png">
+            <img class="img-fluid rounded w-75" src="assets/img/projects/rover/model_arm_matlab.png"\ alt="MATLAB Script">
+        </a>
+        <p><b>MATLAB Script Showing Controller Pose and Calculated Torque</b></p>
+    </div>
+
+    <p>After some thorough testing of the improved prototype, we only need one major fix. The timing belt used to drive the elbow yaw was too loose. Similar to the rover arm, the elbow yaw motor is decoupled from its axis via a timing belt to keep the arm center of mass closer proximally. This reduces the required torque to drive each joint, which in turn decreases cost. To fix this, I modelled an adjustable belt tensioner. After improving this, we had a robust smart controller that improved on all aspects of the previous controller and that will perform better at competition.</p>
+
+    <div>
+        <a href="assets/img/projects/rover/model_arm_movement.gif">
+            <img class="img-fluid rounded" src="assets/img/projects/rover/model_arm_movement.gif"\ alt="Prototype CAD of Haptic Controller">
+        </a>
+        <p><b>Moving the Rover Arm with the Haptic Controller</b></p>
+    </div>
+
+</div>

@@ -1,0 +1,63 @@
+<!-- Portfolio Modal - Title-->
+<h2 class="portfolio-modal-title text-secondary mb-3">Sheet Metal Frame</h2>
+<h4 class="portfolio-modal-subtitle text-secondary mb-0">
+    A bent sheet metal frame to decrease rover weight while increasing frame size
+</h4>
+<!-- Icon Divider-->
+<div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
+    <div class="divider-custom-line"></div>
+</div>
+
+<!-- <a href="assets/img/projects/rover/rover_frame_render_close_downscaled.png">
+    <img class="img-fluid rounded mb-3" src="assets/img/projects/rover/rover_frame_render_close_downscaled.png"\ alt="Rover Frame Deflection under Load">
+</a> -->
+<!-- Portfolio Modal - Video-->
+<h2>2023 Northeastern University Mars Rover Team System Acceptance Review (SAR) Video</h2>
+<p>Frame is showcased in the first minute of video</p>
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/-ZSak_HEInE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- Portfolio Modal - Text-->
+<div class="story bg-light">
+    <hr>
+    <h2 class="mt-3">Background</h2>
+    <p>For the Northeastern University Mars Rover Team, additional weight is a massive issue since the rover must remain under 50kg to follow competition rules. This year, the team wanted to more space inside the rover for mounting components. However, expanding our welded aluminum chassis would significantly increase rover mass. Thus, we aimed to preserve or decrease the frame’s mass while increasing surface area. </p>
+    <hr>
+</div>
+
+<p>Since the rover frame does not endure much stress, I investigated the possibility of a frame made from bent sheet metal. Not only would this be cheap and easy to manufacture because it does not use welding, but it would also be much stronger. For its low weight and ability to bend, I chose 12 gauge (2.06mm) 5052-H32 aluminum for the frame.</p>
+
+<p>I ran two simulations on the frame, a static deformation study and a topology optimization study. For the deformation study, I wanted to understand how the frame bent when the robotic arm picks up an object. After running the study, I verified that the frame deformed under load as expected and that the stresses were manageable. For the geometry optimization study, I hoped to decrease weight by removing excess, non-load bearing material. The study showed that I could optimize the geometry further by adding more holes. </p>
+
+<div>
+    <a href="assets/img/projects/rover/rover_frame_fea.gif">
+        <img class="img-fluid rounded" src="assets/img/projects/rover/rover_frame_fea.gif"\ alt="Rover Frame Deflection under Load">
+    </a>
+    <p><b>Rover Frame Deflection under 10kg Load</b></p>
+</div>
+
+<p>Since Protocase sponsors the University Rover Challenge, I sent them the frame files for manufacturing. This design included sheet metal cutting, bending, powdercoating, and PEM nut insertion into the top of the frame. When the parts arrived, we quickly built and assembled the frame in just three hours. This design proved successful, increasing internal surface area by 34% and decreasing mass by 17%. The team loved the looks of the design and noted that the extra space made mounting electronics and internal hardware much easier. </p>
+
+<div>
+    <a href="assets/img/projects/rover/rover_frame_only.png">
+        <img class="img-fluid rounded" src="assets/img/projects/rover/rover_frame_only.png"\ alt="Render of Rover Frame">
+    </a>
+    <p><b>Render of Rover Frame</b></p>
+</div>
+
+<!-- <div>
+    <a href="assets/img/projects/rover/rover_frame_render_close_downscaled.png">
+        <img class="img-fluid rounded" src="assets/img/projects/rover/rover_frame_render_close_downscaled.png"\ alt="Render of Rover Frame">
+    </a>
+    <p><b>Render of Full Rover</b></p>
+</div> -->
+
+<div>
+    <a href="assets/img/projects/rover/rover_frame_built.jpg">
+        <img class="img-fluid rounded" src="assets/img/projects/rover/rover_frame_built.jpg"\ alt="FEA of Rover Frame">
+    </a>
+    <p><b>Assembled Sheet Metal Frame</b></p>
+</div>
