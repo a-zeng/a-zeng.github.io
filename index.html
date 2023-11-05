@@ -22,6 +22,15 @@
         <script type="text/javascript" src="js/timeline.js"></script>
         <script type="text/javascript" src="js/includeHTML.js"></script>
         <script type="text/javascript" src="js/lazyVideo.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TWELD93T7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6TWELD93T7');
+        </script>
     </head>
     <!-- *********************************** HEAD END *********************************** -->
     
@@ -605,11 +614,11 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="justify-content-center my-auto p-3 col-md-12 col-lg-9">
-                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a fourth-year mechanical engineering student at Northeastern University who's looking to graduate in May 2023 with a bachelor's degree in mechanical engineering and potentially pursue a master's in robotics or mechanical engineering.</p>
+                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a mechanical engineer driven by a passion for turning ideas into reality. My expertise lies in manufacturing, mechanical design, hands-on problem-solving, and ironically coding. I'd be thrilled to help you tackle any engineering problem and will get it done.</p>
 
-                        <p class="pre-wrap lead">Realizing designs and concepts that have been ruminating in your head is a feeling like no other. Watching them work EXACTLY as expected, and seeing them benefits others--- that's what I live for. Reaching that end goal is what inspires me to hone my skills as an engineer and keep tackling new challenges.</p>
+                        <!-- <p class="pre-wrap lead">Actualizing designs that live in your head is a feeling like no other. Watching them work EXACTLY as expected, and seeing them benefit others--- that's what I live for. Reaching that end goal is what inspires me to hone my skills as an engineer and keep tackling new challenges.</p> -->
 
-                        <p class="pre-wrap lead">When I'm not doing homework or studying, I enjoy printing anything I can fathom with my 3D printer, tinkering with things (and consequently making a mess that I enjoy cleaning up), playing music on my tuba or DIY practice marimba, and losing track of time playing my favorite video games.</p>
+                        <p class="pre-wrap lead">When I'm not engrossed in work, I enjoy 3D printing anything I can think of, tinkering with things and making a mess that I enjoy cleaning up, practicing music on the tuba or marimba, and losing track of time playing video games.</p>
                     </div>
                     <div class="d-flex justify-content-center mx-auto my-auto col-md-12 col-lg-3">
                         <img class="mb-3 portfolio-pic" src="assets/img/pic.jpg" alt="">
@@ -650,7 +659,52 @@
 
 
                 <!-- Skills Section Content-->
-                <h2 class="text-center text-secondary mb-4">Experience Timeline</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-drafting-compass"></i></div>
+                            <div class="text-secondary lead">CAD Packages</div>
+                            <div class="font-weight-bold text-center">SOLIDWORKS (CSWA), Fusion 360</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-cogs"></i></div>
+                            <div class="text-secondary lead">Mechanical Design</div>
+                            <div class="font-weight-bold text-center">GD&T, Tolerance Analysis, Simulation (SOLIDWORKS, ANSYS Fluent), DFM, CAM (HSMworks)</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-toolbox"></i></div>
+                            <div class="text-secondary lead">Manufacturing</div>
+                            <div class="font-weight-bold text-center">Mill (CNC, Manual, ProtoTRAK), Lathe (CNC and Manual), 3D Printing (FDM and SLA), Laser Cutting, Waterjet</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-laptop-code"></i></div>
+                            <div class="text-secondary lead">Programming Languages</div>
+                            <div class="font-weight-bold text-center">Python, MATLAB, C, HTML/CSS, PHP</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-window-maximize"></i></div>
+                            <div class="text-secondary lead">Additional Software</div>
+                            <div class="font-weight-bold text-center">SOLIDWORKS Visualize, Maple</div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-microchip"></i></div>
+                            <div class="text-secondary lead">Electronics</div>
+                            <div class="font-weight-bold text-center"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- <h2 class="text-center text-secondary mb-4">Experience Timeline</h2>
                 <div class="container mb-2">
                     <div class="d-flex flex-wrap align-items-center justify-content-center">
                         <div class="p-2">
@@ -698,7 +752,7 @@
 
                     </div>
                 </div>
-                <div class="justify-content-center" id="timeline" style="width: 100%"></div>
+                <div class="justify-content-center" id="timeline" style="width: 100%"></div> -->
 
             </div>
         </section>
@@ -722,21 +776,20 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><a class="text-white lead font-weight-bold" href="tel:978-482-6082"><i class="fas fa-mobile-alt"></i></a></div>
+                            <a class="lead font-weight-bold" href="tel:978-482-6082"><div class="icon-contact mb-3 bg-white"><i class="text-primary fas fa-mobile-alt"></i></div></a>
                             <div class="text-white">Phone</div>
                             <div class="text-white lead font-weight-bold"><a class="text-muted lead font-weight-bold" href="tel:978-482-6082">(978) 482-6082</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center">
-                            <a class="lead font-weight-bold" href="mailto:zeng.al@norteastern.edu">
-                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div></a>
+                            <a class="lead font-weight-bold" href="mailto:zeng.al@norteastern.edu"><div class="icon-contact mb-3 bg-white"><i class="text-primary far fa-envelope"></i></div></a>
                             <div class="text-white">Email</div><a class="text-muted lead font-weight-bold" href="mailto:zeng.al@norteastern.edu">zeng.al@northeastern.edu</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><a class="text-white lead font-weight-bold" href="https://www.linkedin.com/in/a-zeng"><i class="far fab fa-fw fa-linkedin-in"></i></a></div>
+                            <a class="lead font-weight-bold" href="https://www.linkedin.com/in/a-zeng"><div class="icon-contact mb-3 bg-white"><i class="text-primary far fab fa-fw fa-linkedin-in"></i></div></a>
                             <div class="text-white">LinkedIn</div><a class="text-muted lead font-weight-bold" href="https://www.linkedin.com/in/a-zeng">linkedin.com/in/a-zeng</a>
                         </div>
                     </div>
