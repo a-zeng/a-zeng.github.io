@@ -22,10 +22,13 @@
         <script type="text/javascript" src="js/timeline.js"></script>
         <script type="text/javascript" src="js/includeHTML.js"></script>
         <script type="text/javascript" src="js/lazyVideo.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <meta name="google-site-verification" content="1nQV9LsYsILgbq8ASL364mHiD7OKW-021B-5-gSwuM8" />
     </head>
     <!-- *********************************** HEAD END *********************************** -->
     
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TWELD93T7"></script>
+    <script type="text/javascript" src="js/gtag.js"></script>
     
     <!-- *********************************** BODY START *********************************** -->
     <body id="page-top">
@@ -51,11 +54,15 @@
 
 
         <!-- ............................. INTRO START ............................. -->
-        <header class="splash bg-splash text-white text-center d-flex align-items-center">
+        <header class="splash bg-splash text-white text-center d-block align-items-center">
 
-            <img class="img-fluid splash-image" src="assets/img/bg/bg.png" alt="">
+            <!-- <img class="img-fluid splash-image" src="assets/img/bg/bg.png" alt=""> -->
+            <video class="bg-video" autoplay loop muted poster="assets/img/bg/bg.png">
+                <source src="assets/img/bg/rover_frame_turntable.webm" type="video/webm">
+                <source src="assets/img/bg/rover_frame_turntable.mp4" type="video/mp4">
+            </video>
 
-            <div class="masthead container splash-fade-in">
+            <div class="above-bg masthead splash-fade-in ">
                 <!-- Masthead Avatar Image-->
                 <!-- <img class="masthead-avatar mb-3" src="assets/img/pic.jpg" alt=""> -->
                 <!-- Masthead Heading-->
@@ -90,29 +97,30 @@
                 <div class="text-center row justify-content-center">
                     <h3 class="text-secondary col-lg-12 mb-4 d-inline-block">FEATURED PROJECTS</h2>
                     
-                    <!-- 2022 Rover -->
-                    <div class="col-md-12 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover22">
+                    <!-- Viterbi Case -->
+                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-viterbi">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>Watney MK3 (2022) - Northeastern University Mars Rover Team </p></div>
-                            </div>
-                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
-                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
-                                <source data-src="assets/img/projects/rover/rover2022_ERDM-640x360.mp4" type="video/mp4">
-                            </video>
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Machined Case for Split Ergonomic Mechanical Keyboard</p></div>
+                            </div><img class="img-fluid img-16by9" src="assets/img/projects/viterbi/viterbi_thumbnail.png" alt="Image"/>
                         </div>
                     </div>
 
-                    <!-- Monolayer Capstone Project -->
-                    <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-monolayer">
+                    <!-- 2023 Rover, Haptic Controller -->
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover23-haptic">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>Capstone Project - Automated Marangoni Monolayer Transfer Technique</p></div>
-                            </div>
-                            <video class="lazy embed-responsive video-bg" autoplay loop muted playsinline >
-                                <!-- <source src="assets/img/projects/mmx/mmx-pan-640x360.webm" type="video/webm"> -->
-                                <source data-src="assets/img/projects/monolayer/transfer-640x360.mp4" type="video/mp4">
-                            </video>
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Imitative Haptic Controller (2023) - Northeastern University Mars Rover Team</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/rover/HapticController_downscaled.png" alt="Image"/>
+                        </div>
+                    </div>
+
+                    <!-- 2023 Rover, Frame -->
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover23-frame">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Sheet Metal Frame (2023) - Northeastern University Mars Rover Team</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/rover/rover_frame_render_close_downscaled.png" alt="Image"/>
                         </div>
                     </div>
                     
@@ -143,6 +151,25 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
 
+                    <!-- Placeholder -->
+                    <!-- 2023 Rover, Haptic Controller -->
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover23-haptic">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Imitative Haptic Controller (2023) - Northeastern University Mars Rover Team</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/rover/HapticController_downscaled.png" alt="Image"/>
+                        </div>
+                    </div>
+
+                    <!-- 2023 Rover, Frame -->
+                    <div class="sort-all sort-rob sort-cad col-md-12 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-rover23-frame">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Sheet Metal Frame (2023) - Northeastern University Mars Rover Team</p></div>
+                            </div><img class="img-fluid" src="assets/img/projects/rover/rover_frame_render_close_downscaled.png" alt="Image"/>
+                        </div>
+                    </div>
+
                     <!-- Monolayer Capstone Project -->
                     <div class="sort-all sort-cad sort-mf col-md-12 col-lg-6 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-monolayer">
@@ -161,7 +188,7 @@
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#pm-viterbi">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><p>Machined Case for Split Ergonomic Mechanical Keyboard</p></div>
-                            </div><img class="img-fluid" src="assets/img/projects/viterbi/PXL_20220207_204558063.jpg" alt="Image"/>
+                            </div><img class="img-fluid img-16by9" src="assets/img/projects/viterbi/viterbi_thumbnail.png" alt="Image"/>
                         </div>
                     </div>
 
@@ -361,6 +388,46 @@
                 </div>
             </div>
 
+            <!-- 2023 Rover, Haptic Controller  -->
+            <div class="portfolio-modal modal fade" id="pm-rover23-haptic" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <div include-html="html/modal-rover23-haptic.html"></div>
+                                        
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2023 Rover, Frame -->
+            <div class="portfolio-modal modal fade" id="pm-rover23-frame" tabindex="-1" role="dialog" aria-labelledby="#pm-roverLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <div include-html="html/modal-rover23-frame.html"></div>
+                                        
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Plastic Tuba -->
             <div class="portfolio-modal modal fade" id="pm-tuba" tabindex="-1" role="dialog" aria-labelledby="#pm-tubaLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl" role="document">
@@ -541,11 +608,11 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="justify-content-center my-auto p-3 col-md-12 col-lg-9">
-                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a fourth-year mechanical engineering student at Northeastern University who's looking to graduate in May 2023 with a bachelor's degree in mechanical engineering and potentially pursue a master's in robotics or mechanical engineering.</p>
+                        <p class="pre-wrap lead">Hey there! I'm Alex Zeng, a mechanical engineer driven by a passion for turning ideas into reality. My expertise lies in manufacturing, mechanical design, hands-on problem-solving, and ironically coding. I'd be thrilled to help you tackle any engineering problem and will get it done.</p>
 
-                        <p class="pre-wrap lead">Realizing designs and concepts that have been ruminating in your head is a feeling like no other. Watching them work EXACTLY as expected, and seeing them benefits others--- that's what I live for. Reaching that end goal is what inspires me to hone my skills as an engineer and keep tackling new challenges.</p>
+                        <!-- <p class="pre-wrap lead">Actualizing designs that live in your head is a feeling like no other. Watching them work EXACTLY as expected, and seeing them benefit others--- that's what I live for. Reaching that end goal is what inspires me to hone my skills as an engineer and keep tackling new challenges.</p> -->
 
-                        <p class="pre-wrap lead">When I'm not doing homework or studying, I enjoy printing anything I can fathom with my 3D printer, tinkering with things (and consequently making a mess that I enjoy cleaning up), playing music on my tuba or DIY practice marimba, and losing track of time playing my favorite video games.</p>
+                        <p class="pre-wrap lead">When I'm not engrossed in work, I enjoy 3D printing anything I can think of, tinkering with things and making a mess that I enjoy cleaning up, practicing music on the tuba or marimba, and losing track of time playing video games.</p>
                     </div>
                     <div class="d-flex justify-content-center mx-auto my-auto col-md-12 col-lg-3">
                         <img class="mb-3 portfolio-pic" src="assets/img/pic.jpg" alt="">
@@ -586,7 +653,52 @@
 
 
                 <!-- Skills Section Content-->
-                <h2 class="text-center text-secondary mb-4">Experience Timeline</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-drafting-compass"></i></div>
+                            <div class="text-secondary lead">CAD Packages</div>
+                            <div class="font-weight-bold text-center">SOLIDWORKS (CSWA), Fusion 360</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-cogs"></i></div>
+                            <div class="text-secondary lead">Mechanical Design</div>
+                            <div class="font-weight-bold text-center">GD&T, Tolerance Analysis, Simulation (SOLIDWORKS, ANSYS Fluent), DFM, CAM (HSMworks)</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-toolbox"></i></div>
+                            <div class="text-secondary lead">Manufacturing</div>
+                            <div class="font-weight-bold text-center">Mill (CNC, Manual, ProtoTRAK), Lathe (CNC and Manual), 3D Printing (FDM and SLA), Laser Cutting, Waterjet</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-laptop-code"></i></div>
+                            <div class="text-secondary lead">Programming Languages</div>
+                            <div class="font-weight-bold text-center">Python, MATLAB, C, HTML/CSS, PHP</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-window-maximize"></i></div>
+                            <div class="text-secondary lead">Additional Software</div>
+                            <div class="font-weight-bold text-center">SOLIDWORKS Visualize, Maple</div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="bg-secondary icon-contact mb-3"><i class="fas fa-microchip"></i></div>
+                            <div class="text-secondary lead">Electronics</div>
+                            <div class="font-weight-bold text-center"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- <h2 class="text-center text-secondary mb-4">Experience Timeline</h2>
                 <div class="container mb-2">
                     <div class="d-flex flex-wrap align-items-center justify-content-center">
                         <div class="p-2">
@@ -634,7 +746,7 @@
 
                     </div>
                 </div>
-                <div class="justify-content-center" id="timeline" style="width: 100%"></div>
+                <div class="justify-content-center" id="timeline" style="width: 100%"></div> -->
 
             </div>
         </section>
@@ -657,22 +769,21 @@
                 <!-- Contact Section Content-->
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><a class="text-white lead font-weight-bold" href="tel:978-482-6082"><i class="fas fa-mobile-alt"></i></a></div>
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <a class="lead font-weight-bold" href="tel:978-482-6082"><div class="icon-contact mb-3 bg-white"><i class="text-primary fas fa-mobile-alt"></i></div></a>
                             <div class="text-white">Phone</div>
                             <div class="text-white lead font-weight-bold"><a class="text-muted lead font-weight-bold" href="tel:978-482-6082">(978) 482-6082</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <a class="lead font-weight-bold" href="mailto:zeng.al@norteastern.edu">
-                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div></a>
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <a class="lead font-weight-bold" href="mailto:zeng.al@norteastern.edu"><div class="icon-contact mb-3 bg-white"><i class="text-primary far fa-envelope"></i></div></a>
                             <div class="text-white">Email</div><a class="text-muted lead font-weight-bold" href="mailto:zeng.al@norteastern.edu">zeng.al@northeastern.edu</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><a class="text-white lead font-weight-bold" href="https://www.linkedin.com/in/a-zeng"><i class="far fab fa-fw fa-linkedin-in"></i></a></div>
+                        <div class="d-flex flex-column align-items-center mt-5">
+                            <a class="lead font-weight-bold" href="https://www.linkedin.com/in/a-zeng"><div class="icon-contact mb-3 bg-white"><i class="text-primary far fab fa-fw fa-linkedin-in"></i></div></a>
                             <div class="text-white">LinkedIn</div><a class="text-muted lead font-weight-bold" href="https://www.linkedin.com/in/a-zeng">linkedin.com/in/a-zeng</a>
                         </div>
                     </div>
