@@ -1,0 +1,124 @@
+<!-- Portfolio Modal - Title-->
+<h2 class="portfolio-modal-title text-secondary mb-3">Nerf Rayven Bodykit</h2>
+<h4 class="portfolio-modal-subtitle text-secondary mb-0">
+    A bodykit for the Nerf Rayven blaster to convert it into the Flatline Reactive from Apex Legends
+</h4>
+<!-- Icon Divider-->
+<div class="divider-custom">
+    <div class="divider-custom-line"></div>
+    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+    <div class="divider-custom-line"></div>
+</div>
+<!-- Portfolio Modal - Text-->
+<div class="story bg-light">
+    <hr>
+    <p>
+        I met one of my best friends in college over video games, specifically Apex Legends. Over COVID, we played hours of Apex and bonded over it. The Flatline rifle was always his favorite gun in the game, specifically its Reactive skin. For his birthday, I wanted to do something special for him, and I thought it would be so cool to create a firing version of the Flatline Reactive skin. 
+    </p>
+    <hr>
+</div>
+<!-- Portfolio Modal - Image-->
+<div>
+    <a href="assets/img/projects/flatline/flatline_cover_notext.png">
+        <img class="img-fluid rounded" src="assets/img/projects/flatline/flatline_cover_notext.png"\ alt="Image">
+    </a>
+    <p><b>Image of the Modded Blaster</b></p>
+</div>
+<!-- Portfolio Modal - Takeaways -->
+<div id="category-table">
+    <table class="mb-4">
+        <tr>
+            <td class="align-top float-right"><b>Objective: </b></th>
+            <td class="w-75">
+                <ul>
+                    <li>Create a firing Nerf blaster in time for my friend's birthday using a pre-existing Nerf blaster</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="align-top float-right"><b>Challenges: </b></th>
+            <td class="w-75">
+                <ul>
+                    <li>Extracting a game asset and converting it into a usable model in Solidworks</li>
+                    <li>Modelling using Mesh bodies in Solidworks</li>
+                    <li>Designing easy to assemble features to assemble the blaster together</li>
+                    <li>Marketing the blaster on Makerworld</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="align-top float-right"><b>Results: </b></th>
+            <td class="w-75">
+                <ul>
+                    <li><a href="https://makerworld.com/en/models/1214582-flatline-reactive-nerf-rayven-body-kit#profileId-1230129">Submission to Makerworld</a></li>
+                    <li>Amazing birthday gift and happy friend 😊</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="align-top float-right">
+                <b>Takeaways: </b>
+            </th>
+            <td class="w-75">
+                <ul>
+                    <li>Game assets are tricky to work with in Solidworks because their models are optimized for games (Blender is better for this)</li>
+                    <li>Timelines really push you and don't let perfectionism consume you</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+<h2>Modelling the Blaster</h2>
+<p>The toughest part of modelling the blaster was converting the game-optimized geometry to (partially) solid bodies. This step of converting a graphics body to a solid body EASILY took a majority of the project's time. When you import a game asset into Solidworks, it's usually optimized for efficiency when rendering in the game, so many faces are decimated and interpolated instead of smooth. I constantly found myself segmenting the mesh to add in edges, then working with surfaces to split the model into discrete chunks. By the end, I had a product that could work as the baseline which I work the blaster into. The middle section of the blaster is not modelled to save time, as it's not needed because the Nerf blaster will fit between the two segments</p>
+
+<div>
+    <a href="assets/img/projects/flatline/flatline_mesh_bodies.png">
+        <img class="img-fluid rounded w-75" src="assets/img/projects/flatline/flatline_mesh_bodies.png"\ alt="Mesh Bodies of the Blaster's Structure">
+    </a>
+    <p><b>Mesh Bodies of the Blaster's Structure</b></p>
+</div>
+
+<p>From here, the mesh bodies need to be segmented nicely so that they can all fit on the build plate of the 3D printer and easily fit together during assembly. I opted to try to model most of the blaster without COTS fasteners or adhesives, and only use self-tapping screws where strength is required and hot glue where there is no space for a fastener.</p>
+
+<div class="row">
+    <div class="col-lg-6">
+        <a href="assets/img/projects/flatline/flatline_front.png">
+            <img class="img-fluid rounded" src="assets/img/projects/flatline/flatline_front.png"\ alt="Image">
+        </a>
+        <p><b>Front Attachment of Blaster</b></p>
+    </div>
+    <div class="col-lg-6">
+        <a href="assets/img/projects/flatline/flatline_front_section.png">
+            <img class="img-fluid rounded" src="assets/img/projects/flatline/flatline_front_section.png"\ alt="Image">
+        </a>
+        <p><b>Section View of Front</b></p>
+    </div>
+</div>
+
+<p>Of the parts in the front of the blaster, I'm the most proud of the design for the cover plates. These are meant to add splashes of color to the blaster, and I wanted them to be printable separately instead of multi-color to make the design more accessible and less wasteful. Due to these restraints, I came up with a clever idea of combining snap fit geometry with posts to securely lock the plates in place. This took a few iterations to optimize the feel of the press fit, as well as tabs on the side.</p>
+
+<div class="row">
+    <div class="col-lg-6">
+        <a href="assets/img/projects/flatline/flatline_coverplate_isolated.png">
+            <img class="img-fluid rounded" src="assets/img/projects/flatline/flatline_coverplate_isolated.png"\ alt="Image">
+        </a>
+        <p><b>Cover Plate with Snap Fits and Side Tabs</b></p>
+    </div>
+    <div class="col-lg-6">
+        <a href="assets/img/projects/flatline/flatline_coverplate_snaps.png">
+            <img class="img-fluid rounded" src="assets/img/projects/flatline/flatline_coverplate_snaps.png"\ alt="Image">
+        </a>
+        <p><b>Section View of Plate and its Snap Features and Side Tabs</b></p>
+    </div>
+</div>
+
+<p>If you're more curious about the design, feel free to check out the build guide to see how all the parts fit together.</p>
+
+<div>
+    <embed src="assets/pdf/Nerf Rayven Flatline Reactive, Assembly Guide, v1.pdf" style="width: 100%; height: 90vh"></embed>
+    <p><b>Bodykit Build Guide</b></p>
+</div>
+
+<hr>
